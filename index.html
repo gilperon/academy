@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartAcademy</title>
+  
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--Custom-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <script src="js/global.js"></script>
+
+</head>
+<body>
+
+ 
+
+<section class="main-cover" id="slide-1-bg">
+
+
+
+
+<!--Desktop Menu-->
+<header id="header-wrap">
+    <nav id="desktop-menu" class="navbar" aria-label="Desktop Menu">
+
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <!--Toggle-->
+                <button class="navbar-toggler d-flex d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <!--Logo-->
+                <a href="/"><img src="images/logo-v1.png" class="logo" alt="PH3A Logo" title="PH3A Site"></a>
+                <!--Links-->
+                <ul class="navbar-nav d-none d-md-flex flex-row">
+                    <li id="menu-home"><a href="/">/ sobre</a></li>
+                    <li id="menu-about"><a href="/">/ especialidades</a></li>
+                    <li id="menu-product" class="nav-item dropdown">
+                        <a class="v2-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="menu.product">
+                            / cursos
+                        </a>
+                        <ul class="dropdown-menu position-absolute" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/">..</a></li>
+                            <li><a class="dropdown-item" href="/">..</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="scroll-contato" href="/">/ paciente modelo</a></li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-center align-items-center position-relative flex-row-reverse flex-lg-row">
+                <div class="d-none d-lg-inline-block">
+                    <a class="dropdown-toggle caret-off lang-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="d-none d-lg-inline-block current-lang" data-i18n="translate">
+                            Entrar
+                        </span>
+                        <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-inline-block" style="margin-left:5px;">
+                            <path d="M22.0964 2.26436L12.0118 12.5109L1.74743 2.24659" stroke="#fff" stroke-width="2.62869" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start drop-i18n position-absolute" style="border-radius:7px;">
+                        <li>
+                            <a class="dropdown-item dropdown-lang" data-language="en">
+                                <img src="images/dropdown-icon-1.png">
+                                Área do aluno
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider" style="max-width: 80%;margin:5px auto;opacity:.15;"></li>
+                        <li>
+                            <a class="dropdown-item dropdown-lang" data-language="pt">
+                                <img src="images/dropdown-icon-1.png">
+                                Área do professor
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="/" class="btn-menu-primary">Matricule-se</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+
+</body>
+</html>
