@@ -79,6 +79,8 @@ a{
 
 
 
+
+
 @mixin hero-border-radius{
     border-radius:0 0 50px 50px;
     @media (min-width: 768px) {
@@ -90,6 +92,7 @@ a{
     position: relative;
     background-color:#000;
     min-height:100dvh;
+    z-index:2;
    
     &::before{
             content: "";
@@ -109,6 +112,7 @@ a{
         background-size:cover;
     }
 }
+
 
 
 
