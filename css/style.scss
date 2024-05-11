@@ -95,9 +95,7 @@ a{
             background: url(../images/hero-banner-1.png) no-repeat bottom center;
             background-size: cover ;
             @include hero-border-radius;
-    }
-    &.fix-opacity::before{
-        opacity:.82;
+            opacity:.82;
     }
 
 }
@@ -108,6 +106,7 @@ a{
 #slide-2-bg {
     position: relative;
     background-color:#000;
+    height:100vh;
    
     &::before{
         content: "";
@@ -125,6 +124,7 @@ a{
 #slide-3-bg {
     position: relative;
     background-color:#000;
+    height:100vh;
    
     &::before{
         content: "";
@@ -142,6 +142,7 @@ a{
 #slide-4-bg {
     position: relative;
     background-color:#000;
+    height:100vh;
    
     &::before{
         content: "";
