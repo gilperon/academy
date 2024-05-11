@@ -89,7 +89,7 @@ a{
 #slide-1-bg {
     position: relative;
     background-color:#000;
-    min-height:100vh;
+    min-height:100dvh;
    
     &::before{
             content: "";
@@ -160,6 +160,8 @@ a{
         background-size:cover;
     }
 }
+
+
 
 
 
