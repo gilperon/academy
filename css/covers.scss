@@ -1,0 +1,135 @@
+:root{
+
+    --var-main-font-regular:'aeonik_trialregular', Arial, sans-serif;
+    --var-main-font-light:'aeonik_triallight', Arial, sans-serif;
+    --var-main-font-bold:'aeonik_trialbold', Arial, sans-serif;
+
+
+    --var-main-btn-bg-color: #C12746;
+    --var-main-btn-ft-color: #fff;
+
+}
+
+@mixin btn-main{
+    font-weight: 500;
+    font-family: "Inter", Arial, sans-serif;
+    color: var(--var-main-btn-ft-color);
+    background: var(--var-main-btn-bg-color);
+    border-radius:50px;
+    //padding: 20px;
+    // display: block;
+    // border-radius: 30px;
+    // transition: .3s ease-in-out;
+    // text-decoration: none;
+    &:hover{
+        color:#fff;
+        opacity:.9;
+    }
+
+}
+
+.btn-main{
+    @include btn-main;
+}
+
+#hero-index{
+    position: relative;
+    z-index: 1;
+    .display-cs{
+        line-height: 0.85;
+        font-family: var(--var-main-font-regular);
+        font-weight: 400;
+    }
+    .lead-cs{
+        font-weight: 400;
+        font-size:1.1rem;
+        font-family: "Inter", Arial, sans-serif;
+    }
+    .btn-cs{
+        border-radius: 50px;
+        padding: .8rem 1.2rem;
+        font-size: 16px;
+        &:hover{
+            background:#000;
+        }
+    }
+}
+
+#hero-landing{
+
+    position: relative;
+    z-index: 1;
+    .display-cs{
+        line-height: 0.9;
+        font-family: var(--var-main-font-regular);
+        font-weight: 400;
+    }
+    p,div{
+        font-family: "Inter", Arial, sans-serif;
+    }
+
+    .lead-cs{
+        font-weight: 400;
+        font-size:1.1rem;
+        font-family: "Inter", Arial, sans-serif;
+    }
+    .btn-cs{
+        border-radius: 50px;
+        padding: .8rem 1.2rem;
+        font-size: 16px;
+        &:hover{
+            background:#000;
+        }
+    }
+
+}
+
+#index-cover-1{
+    background:#000;
+    position:relative;
+
+    .display-cs{
+        line-height: 0.9;
+        font-family: var(--var-main-font-regular);
+        font-weight: 400;
+    }
+
+    .box-cs{
+        width:85%;
+        p{
+            font-family: "Inter", Arial, sans-serif;
+            color:#DCDCDC;
+            margin-bottom:2rem;
+        }
+
+    }
+}
+
+
+
+#hero-curso{
+    position: relative;
+    z-index: 1;
+    .display-cs{
+        line-height: 0.9;
+        font-family: var(--var-main-font-regular);
+        font-weight: 400;
+    }
+    p,div{
+        font-family: "Inter", Arial, sans-serif;
+    }
+
+    .lead-cs{
+        font-weight: 400;
+        font-size:1.1rem;
+        font-family: "Inter", Arial, sans-serif;
+    }
+    .btn-cs{
+        border-radius: 50px;
+        padding: .8rem 1.2rem;
+        font-size: 16px;
+        &:hover{
+            background:#000;
+        }
+    }
+}
