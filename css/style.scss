@@ -85,7 +85,7 @@ a{
 #slide-1-bg {
     position: relative;
     background-color:#000;
-    height:100vh;
+    min-height:100vh;
    
     &::before{
         content: "";
@@ -106,7 +106,7 @@ a{
 #slide-2-bg {
     position: relative;
     background-color:#000;
-    height:100vh;
+    min-height:100vh;
    
     &::before{
         content: "";
@@ -124,7 +124,7 @@ a{
 #slide-3-bg {
     position: relative;
     background-color:#000;
-    height:100vh;
+    min-height:100vh;
    
     &::before{
         content: "";
@@ -142,7 +142,7 @@ a{
 #slide-4-bg {
     position: relative;
     background-color:#000;
-    height:100vh;
+    min-height:100vh;
    
     &::before{
         content: "";
