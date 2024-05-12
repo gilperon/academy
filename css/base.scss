@@ -1,209 +1,190 @@
-$ff-custom: 'aeonik_trialregular', Arial, sans-serif;
-$asset-path:"..images/";
+$ff-custom: "aeonik_trialregular", Arial, sans-serif;
+$asset-path: "..images/";
 
 @import "_menu";
 @import "_covers";
 
-
-html,body{
-    overflow-x:hidden;
+html,
+body {
+    overflow-x: hidden;
 }
 
-h1{
-    font-family:$ff-custom;
+h1 {
+    font-family: $ff-custom;
 }
 
-
-
-
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-.logo-img{
-    width:226px;
+.logo-img {
+    width: 226px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@mixin hero-border-radius{
-    border-radius:0 0 40px 40px;
+@mixin hero-border-radius {
+    border-radius: 0 0 40px 40px;
     @media (min-width: 768px) {
-        border-radius:0 0 70px 70px;
+        border-radius: 0 0 70px 70px;
     }
 }
+
+.home-slider {
+    width: 100%;
+    height:100%;
+
+    // Overriding Styles
+    .swiper-pagination{
+        padding-bottom:30px;
+    }
+    .swiper-pagination-bullet {
+        width: 7px;
+        height: 7px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 0;
+        color: #000;
+        opacity: 1;
+        background: #fff;
+        margin-top:-30px;
+    }
+    .swiper-pagination-bullet-active {
+        border:1px solid #c12746;
+        background:transparent;
+    }
+
+    // Dobras
+    .home-slider-backdrop{
+        background:rgba(0, 0, 0, 0.18);position:absolute;inset:0;width:100%;height:100%;
+    }
+    .home-slider-cover {
+        background: #000;
+        position: relative;
+
+        .slider-cs {
+            height: 100dvh;
+            @include hero-border-radius;
+            position: relative;
+            z-index: 1;
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position:bottom center;
+            background-color:#000;
+        }
+
+        .slider-1 {
+            background-image: url(../images/hero-banner-1-mob.png);
+            @media (min-width: 768px) {
+                background-image: url(../images/hero-banner-1.png);
+            }
+        }
+    }
+}
+
+
+
+
+
+
 
 #slide-1-bg {
     position: relative;
-    background-color:#000;
-    min-height:100dvh;
-    z-index:2;
-   
-    &::before{
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            @include hero-border-radius;
-            opacity:.82;
-    }
+    background-color: #000;
+    min-height: 100dvh;
+    z-index: 2;
 
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @include hero-border-radius;
+        opacity: 0.82;
+    }
 }
 #slide-1-bg::before {
     background: url(../images/hero-banner-1-mob.png) no-repeat bottom center;
-    background-size:cover;
+    background-size: cover;
     @media (min-width: 768px) {
         background: url(../images/hero-banner-1.png) no-repeat bottom center;
-        background-size:cover;
+        background-size: cover;
     }
 }
 
-
-
-
-
-
-
 #slide-2-bg {
     position: relative;
-    background-color:#000;
-    min-height:100vh;
-   
-    &::before{
+    background-color: #000;
+    min-height: 100vh;
+
+    &::before {
         content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            @include hero-border-radius;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @include hero-border-radius;
     }
 }
 #slide-2-bg::before {
     background: url(../images/hero-banner-2.png) no-repeat bottom center;
-    background-size:cover;
+    background-size: cover;
     @media (min-width: 768px) {
         background: url(../images/hero-banner-2.png) no-repeat bottom center;
-        background-size:cover;
+        background-size: cover;
     }
 }
 
-
-
 #slide-3-bg {
     position: relative;
-    background-color:#000;
-    min-height:100vh;
-   
-    &::before{
+    background-color: #000;
+    min-height: 100vh;
+
+    &::before {
         content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            @include hero-border-radius;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @include hero-border-radius;
     }
 }
 #slide-3-bg::before {
     background: url(../images/hero-banner-3.png) no-repeat bottom center;
-    background-size:cover;
+    background-size: cover;
     @media (min-width: 768px) {
         background: url(../images/hero-banner-3.png) no-repeat bottom center;
-        background-size:cover;
+        background-size: cover;
     }
 }
 
-
-
-
-
-
-
-
-
 #slide-4-bg {
     position: relative;
-    background-color:#000;
-    min-height:100vh;
-   
-    &::before{
+    background-color: #000;
+    min-height: 100vh;
+
+    &::before {
         content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
 }
 #slide-4-bg::before {
     background: url(../images/hero-banner-4.png) no-repeat bottom center;
-    background-size:cover;
+    background-size: cover;
     @media (min-width: 768px) {
         background: url(../images/hero-banner-4.png) no-repeat bottom center;
-        background-size:cover;
+        background-size: cover;
     }
 }
 
+._menu {
+    $ff-menu: "Inter";
+    $ff-color: #fff;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-._menu{
-
-    
-    $ff-menu: 'Inter';
-    $ff-color:#fff;
-
-
-    a{
+    a {
         font-family: $ff-menu;
         font-size: 21.4px;
         font-weight: 500;
         line-height: 25.9px;
         text-align: center;
-
     }
-
-
-
 }
-
-

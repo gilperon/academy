@@ -2,6 +2,16 @@ console.log('Start');
 
 $(document).ready(function() {
 
+  var swiper = new Swiper(".home-slider", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+    },
+  });
+
 
     // Wait for 5 seconds (5000 milliseconds)
     // setTimeout(function() {
