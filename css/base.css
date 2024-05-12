@@ -1101,6 +1101,24 @@
   }
 }
 
+.cover-footer {
+  position: relative;
+  z-index: 5;
+  margin-top: -24px;
+  position: relative;
+  background: url("../images/bg-footer-desktop.png") no-repeat top center;
+  background-size: cover;
+  min-height: 300px;
+  border-radius: 35px 35px 0 0;
+}
+@media (max-width: 768px) {
+  .cover-footer {
+    margin-top: -20px;
+    background: url("../images/bg-footer-mobile.png") no-repeat top center;
+    min-height: 450px;
+  }
+}
+
 /*
     Landing *************************************************************************************** /
 */
@@ -1161,8 +1179,8 @@
   background: #000;
 }
 
-body {
-  background: #eee;
+html, body {
+  overflow-x: hidden;
 }
 
 h1 {

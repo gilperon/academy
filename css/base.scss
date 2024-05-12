@@ -5,18 +5,13 @@ $asset-path:"..images/";
 @import "_covers";
 
 
-body{
-    background:#eee;
+html,body{
+    overflow-x:hidden;
 }
 
 h1{
     font-family:$ff-custom;
 }
-
-
-
-
-
 
 
 
