@@ -50,7 +50,7 @@ a{
 
 
 @mixin hero-border-radius{
-    border-radius:0 0 50px 50px;
+    border-radius:0 0 40px 40px;
     @media (min-width: 768px) {
         border-radius:0 0 70px 70px;
     }
