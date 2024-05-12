@@ -127,10 +127,9 @@
         right: 0;
     }
 
-    @media (max-width: 568px) {
+    @media (max-width: 768px) {
         .display-cs {
             font-size: 65px;
-            padding: 0 10px;
             margin-top:-5px
         }
         .lead-cs {
@@ -185,6 +184,9 @@
     }
 
     @media (max-width: 768px) {
+        .display-cs {
+            font-size:40px;
+        } 
         .btn-cs {
             padding: 0.6rem 1.15rem 0.7rem;
             font-size: 14px;
@@ -528,6 +530,113 @@
         }
     }
 
+}
+
+
+
+.cover-nosso-aluno {
+    position:relative;
+    background: #f2f2f2;
+    overflow: hidden;
+
+    > div.container{
+        max-width: 80%;
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+    
+    .form-control,.form-select{
+        font:14px / 30px 'Inter';
+        border-radius:50px;
+        padding:.4rem 1.2rem .375rem;
+    }
+
+    .form-control#email::placeholder { 
+            color: #C12746; 
+    }
+
+    .display-cs {
+        line-height: 0.9;
+        font-family: var(--var-main-font-regular);
+        font-weight: 400;
+        z-index:2;
+        color:#000;
+    }
+
+    p.texto{
+        font-family: 'Inter', Arial, Helvetica, sans-serif;
+        color:#000;
+        max-width: 280px;
+        z-index:2;
+        //Mobile
+        @media (max-width: 768px) {
+            font-size:14px;
+            max-width: 220px;
+            margin-bottom:1.8rem;
+        }
+    }
+
+    .box-pattern {
+        position: absolute;
+        max-width: 320px;
+        bottom: -230px;
+        left: 0px;    
+        z-index:1;    
+    }
+
+    .pattern-height{
+        height: 100px;
+    }
+
+    @media (max-width: 768px) {
+        .display-cs {
+            font-size: 45px;
+        }
+
+        .box-pattern {
+            position: absolute;
+            width: 80%;
+            max-width: 130px;
+            bottom: -110px;
+            left: -30px;   
+            z-index: 1;
+        }
+
+        .pattern-height{
+            height: 10px;
+            padding: 0;
+        }
+    }
+
+
+    .btn-cs {
+        border-radius: 50px;
+        padding: 0.4rem 2.4rem 0.6rem;
+        font-size: 16px;
+        width: fit-content;
+        margin: 0 auto;
+        background: #C12746;
+        color:#fff;
+        margin-top:2px;
+        &:hover {
+            opacity:.75;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .display-cs {
+            font-size:40px;
+        }
+        .btn-cs {
+            padding: 0.5rem 3.2rem 0.6rem;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    }
+
+
+    
 }
 
 
