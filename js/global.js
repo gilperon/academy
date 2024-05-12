@@ -1,6 +1,15 @@
 console.log('Start');
 
 $(document).ready(function() {
+
+
+    // Wait for 5 seconds (5000 milliseconds)
+    // setTimeout(function() {
+    //   // Change the id of the section element to slide-2-bg
+    //   $('#slide-1-bg').attr('id', 'slide-1-bg');
+    // }, 5000);
+
+
     // Add click event listener to all cancel href elements ul.navbar-nav li a
     //$('ul.navbar-nav li a').click(function(e) { // ativa para todos , o atual ativa apenas pro menu-concursos
     $('ul.navbar-nav li a#menu-cursos').click(function(e) {

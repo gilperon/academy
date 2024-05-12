@@ -123,9 +123,15 @@
 *
 */
 /*Menu Wrap Sticky*/
+.main-cover > div:nth-child(1) {
+  padding-top: var(--var-menu-size-height);
+}
+
 #header-wrap {
   min-height: var(--var-menu-size-height);
   width: 100%;
+  position: absolute;
+  inset: 0;
 }
 
 /*Menu Principal Navigation*/
