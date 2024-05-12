@@ -918,6 +918,89 @@
   }
 }
 
+.cover-duvidas-frequentes {
+  position: relative;
+  background: #C12746;
+  background-size: cover;
+  /*PERGUNTAS E RESPOSTAS*/
+}
+.cover-duvidas-frequentes .display-cs {
+  line-height: 1.2;
+  font-family: var(--var-main-font-regular);
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  max-width: 600px;
+}
+@media (max-width: 768px) {
+  .cover-duvidas-frequentes .display-cs {
+    font-size: 60px;
+    line-height: 0.92;
+    font-family: var(--var-main-font-regular);
+    margin-bottom: 0.8rem;
+  }
+}
+.cover-duvidas-frequentes .box-perguntas {
+  padding: 40px 0 25px;
+  border-bottom: 1px solid #fff;
+  text-align: left;
+  cursor: pointer;
+  max-width: 80%;
+  margin: 0 auto;
+  user-select: none;
+}
+.cover-duvidas-frequentes .box-perguntas .p-titulo {
+  font: 500 16px/24px "Inter";
+  color: #fff;
+  letter-spacing: 0.2px;
+  padding-right: 30px;
+}
+.cover-duvidas-frequentes .box-perguntas .p-resposta {
+  font: 300 14px/24px "Inter";
+  letter-spacing: 0.2px;
+  color: #fff;
+  padding: 20px 0 0;
+}
+.cover-duvidas-frequentes .box-perguntas .arrow-up {
+  background: url(../images/arrow-up.png) no-repeat right;
+  background-size: 20px;
+  filter: sepia(250%);
+}
+.cover-duvidas-frequentes .box-perguntas .arrow-down {
+  background: url(../images/arrow-down.png) no-repeat right;
+  background-size: 20px;
+}
+@media (max-width: 768px) {
+  .cover-duvidas-frequentes .box-perguntas {
+    max-width: 100%;
+  }
+  .cover-duvidas-frequentes .box-perguntas .p-titulo {
+    font-family: 16px;
+  }
+  .cover-duvidas-frequentes .box-perguntas .p-resposta {
+    font-family: 14px;
+  }
+}
+.cover-duvidas-frequentes .btn-cs {
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  font-size: 16px;
+  width: fit-content;
+  margin: 0 auto;
+  background: #fff;
+  color: #C12746;
+}
+.cover-duvidas-frequentes .btn-cs:hover {
+  opacity: 0.75;
+}
+@media (max-width: 768px) {
+  .cover-duvidas-frequentes .btn-cs {
+    padding: 0.6rem 1.5rem 0.7rem;
+    font-size: 14px;
+    margin-top: -5px;
+  }
+}
+
 /*
     Landing *************************************************************************************** /
 */

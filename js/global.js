@@ -56,6 +56,37 @@ $(document).ready(function() {
 
 
 
+
+
+      //Perguntas e Respostas
+      $('.box-perguntas').click(function() { boxPerguntas(this.id) }); 
+
+      //Perguntas
+      function boxPerguntas(clicked_id) 
+      {
+          var onlynumber = clicked_id.replace(/\D/g, "");
+          var zdiv = "z-"+onlynumber;
+          var ydiv = "y-"+onlynumber;
+          if(document.getElementById(zdiv).style.display=="none"){
+              document.getElementById(zdiv).style.display='block';
+              document.getElementById(ydiv).className='p-titulo arrow-up';
+              document.getElementById(ydiv).style.fontWeight ='600';
+          }else{
+              document.getElementById(zdiv).style.display='none';
+              document.getElementById(ydiv).className='p-titulo arrow-down';
+              document.getElementById(ydiv).style.fontWeight='400';
+          }
+      }
+
+
+
+
+
+
+
+
+
+
 });
 
 
