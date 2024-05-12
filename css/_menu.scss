@@ -41,7 +41,7 @@
 }
 
 
-.custom-theme{
+.landing-theme{
     @include menu-sm;
     @media (min-width: 768px) {
         --var-menu-bg-color: none;

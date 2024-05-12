@@ -1,7 +1,7 @@
 $ff-custom: 'aeonik_trialregular', Arial, sans-serif;
 
-@import "menu";
-@import "covers";
+@import "_menu";
+@import "_covers";
 
 
 body{
@@ -11,37 +11,6 @@ body{
 h1{
     font-family:$ff-custom;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
