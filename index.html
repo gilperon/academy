@@ -27,6 +27,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <!-- Carrousel -->
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/carousel.js"></script>
 
 
 
@@ -230,12 +235,12 @@
                 <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec graoida orci ac nisl iaculis, a luctus lacus pellentesque. Mauris lorem dolor, aliquam in mattis non, rhoncus id risus.</p>
             </div>
             <div class="col-md-6 px-4 d-flex justify-content-end align-items-end gap-2 mb-3 mb-0">
-                <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="$('#slider-especialidades').trigger('next.owl.carousel');">
                     <path d="M0.636164 23.8427C0.636165 11.026 11.0262 0.635926 23.843 0.635927C36.6597 0.635928 47.0497 11.026 47.0497 23.8427C47.0497 36.6595 36.6597 47.0495 23.843 47.0495C11.0262 47.0495 0.636163 36.6595 0.636164 23.8427Z" stroke="#D24A4A" stroke-width="1.2716"/>
                     <path d="M19.4364 32.3991L10.8093 23.7202L19.4364 15.0413" stroke="#D24A4A" stroke-width="1.90741" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M36.877 24.1606L12.0807 24.1606" stroke="#D24A4A" stroke-width="1.90741" stroke-linecap="round"/>
                 </svg>
-                <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="$('#slider-especialidades').trigger('prev.owl.carousel');">
                     <circle cx="24.159" cy="23.8426" r="23.2068" stroke="white" stroke-width="1.2716"/>
                     <path d="M27.9298 15.1907L36.5569 23.8298L27.9298 32.469" stroke="white" stroke-width="1.90741" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M10.4893 24.1604H35.2856" stroke="white" stroke-width="1.90741" stroke-linecap="round"/>
@@ -243,18 +248,49 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid p-0 ps-4">
-        <div class="row g-0">
-            <div class="col-12 d-flex justify-content-end">
+    <div class="wrap-slider-especialidades mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style="min-height:300px;">
+        
+                    <!--Container para Fluid Right-->
+                      <div class="container-cs-fluid-right container-cs-md-fluid-right-remove">
 
-                <div class="carousel d-flex flex-row">
-                    <div style="width:250px;height:250px;background:#888;margin:10px;">&nbsp;</div> 
-                    <div style="width:250px;height:250px;background:#888;margin:10px;margin-right:-10px;">&nbsp;</div> 
+                        <!--Inicio do carousel-->
+                            <div id="slider-especialidades" class="owl-carousel owl-theme">
+                                <div class="item">
+                                        <div class="card-cs bg-odonto">
+                                            <div class="titulo">Adriane Souza</div>
+                                            <div class="texto">Fisioterapeuta há 16 anos e especialista em Fisioterapia Dermatofuncional; Aperfeiçoamento em Pesquisa, Gestão e Inovação em Cirurgia Translacional na Escola Paulista de Medicina da UNIFESP; Mestre em Regeneração Tecidual pela UNIFESP; Ozonioterapeuta afiliada à Associação Brasileira de Ozonioterapia (ABOZ); Autora do Livro “Cuidados Tópicos em Cirurgia Plástica Estética”; Biomédica Esteta; Docente em Fisioterapia Dermatofuncional e Biomedicina Estética; Fundadora Drena.me Clínica.</div>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-cs bg-biomedicina">
+                                        <div class="titulo">Adriane Souza</div>
+                                        <div class="texto">Fisioterapeuta há 16 anos e especialista em Fisioterapia Dermatofuncional; Aperfeiçoamento em Pesquisa, Gestão e Inovação em Cirurgia Translacional na Escola Paulista de Medicina da UNIFESP; Mestre em Regeneração Tecidual pela UNIFESP; Ozonioterapeuta afiliada à Associação Brasileira de Ozonioterapia (ABOZ); Autora do Livro “Cuidados Tópicos em Cirurgia Plástica Estética”; Biomédica Esteta; Docente em Fisioterapia Dermatofuncional e Biomedicina Estética; Fundadora Drena.me Clínica.</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-cs bg-odonto">
+                                        <div class="titulo">Adriane Souza</div>
+                                        <div class="texto">Fisioterapeuta há 16 anos e especialista em Fisioterapia Dermatofuncional; Aperfeiçoamento em Pesquisa, Gestão e Inovação em Cirurgia Translacional na Escola Paulista de Medicina da UNIFESP; Mestre em Regeneração Tecidual pela UNIFESP; Ozonioterapeuta afiliada à Associação Brasileira de Ozonioterapia (ABOZ); Autora do Livro “Cuidados Tópicos em Cirurgia Plástica Estética”; Biomédica Esteta; Docente em Fisioterapia Dermatofuncional e Biomedicina Estética; Fundadora Drena.me Clínica.</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-cs bg-biomedicina">
+                                        <div class="titulo">Adriane Souza</div>
+                                        <div class="texto">Fisioterapeuta há 16 anos e especialista em Fisioterapia Dermatofuncional; Aperfeiçoamento em Pesquisa, Gestão e Inovação em Cirurgia Translacional na Escola Paulista de Medicina da UNIFESP; Mestre em Regeneração Tecidual pela UNIFESP; Ozonioterapeuta afiliada à Associação Brasileira de Ozonioterapia (ABOZ); Autora do Livro “Cuidados Tópicos em Cirurgia Plástica Estética”; Biomédica Esteta; Docente em Fisioterapia Dermatofuncional e Biomedicina Estética; Fundadora Drena.me Clínica.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Fim do carousel-->
+
+                      </div>
+                      <!--Fim container fluid right-->
+
                 </div>
-
             </div>
         </div>
-
     </div>
 </section>
 
@@ -328,15 +364,75 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid p-0 mb-4">
-        <div class="row g-0">
-            <div class="col-12 d-flex justify-content-end justify-content-md-center">
+    <div class="wrap-slider-testimonial mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style="min-height:300px;">
+        
+                    <!--Container para Fluid Right-->
+                      <div class="container-cs-fluid-right container-cs-md-fluid-right-remove">
 
-                <div class="carousel d-flex flex-row">
-                    <div style="width:250px;height:250px;background:#bbb;margin:10px;border-radius:5px;">&nbsp;</div> 
-                    <div style="width:250px;height:250px;background:#bbb;margin:10px;margin-right:-10px;border-radius:5px;">&nbsp;</div> 
+                        <!--Inicio do carousel-->
+                            <div id="slider-testimonial" class="owl-carousel owl-theme">
+                                <div class="item">
+                                        <div class="card-cs">
+                                            <div class="titulo">Ut molestie hendrerit tortor, et dapibus ante ultricies at.</div>
+                                            <div class="texto">Vivamus laoreet luctus mollis. Sed luctus nilsl, vitae nunc conge ante id cursus tristique. Etiam venenatis ultricies ligula, vel pretium felis euismod.</div>
+                                            <div class="box-author">
+                                                <img class="avatar" src="/images/avatar-medica.png">
+                                                <p class="author">
+                                                    <span>Dra. Lorem Ipsum </span>
+                                                    <span>Lorem ipsum dolor sit amet</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                        <div class="card-cs">
+                                            <div class="titulo">Ut molestie hendrerit tortor, et dapibus ante ultricies at.</div>
+                                            <div class="texto">Vivamus laoreet luctus mollis. Sed luctus nilsl, vitae nunc conge ante id cursus tristique. Etiam venenatis ultricies ligula, vel pretium felis euismod.</div>
+                                            <div class="box-author">
+                                                <img class="avatar" src="/images/avatar-medico.png">
+                                                <p class="author">
+                                                    <span>Dra. Lorem Ipsum </span>
+                                                    <span>Lorem ipsum dolor sit amet</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-cs">
+                                        <div class="titulo">Ut molestie hendrerit tortor, et dapibus ante ultricies at.</div>
+                                        <div class="texto">Vivamus laoreet luctus mollis. Sed luctus nilsl, vitae nunc conge ante id cursus tristique. Etiam venenatis ultricies ligula, vel pretium felis euismod.</div>
+                                        <div class="box-author">
+                                            <img class="avatar" src="/images/avatar-medica.png">
+                                            <p class="author">
+                                                <span>Dra. Lorem Ipsum </span>
+                                                <span>Lorem ipsum dolor sit amet</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                        <div class="card-cs">
+                                            <div class="titulo">Ut molestie hendrerit tortor, et dapibus ante ultricies at.</div>
+                                            <div class="texto">Vivamus laoreet luctus mollis. Sed luctus nilsl, vitae nunc conge ante id cursus tristique. Etiam venenatis ultricies ligula, vel pretium felis euismod.</div>
+                                            <div class="box-author">
+                                                <img class="avatar" src="/images/avatar-medico.png">
+                                                <p class="author">
+                                                    <span>Dra. Lorem Ipsum </span>
+                                                    <span>Lorem ipsum dolor sit amet</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        <!--Fom carousel-->
+
+                      </div>
+                      <!--Fim container fluid right-->
+
                 </div>
-
             </div>
         </div>
     </div>

@@ -12,7 +12,7 @@
     --var-menu-btn-bg:#C12746;
     --var-menu-btn-bg-hover:#000000;
     --var-menu-bg-active:#C12746;
-    --var-menu-size-height: 70px; //altura do menu mobile (variables.scss are not working on _menu.scss so it was defined here) 
+    --var-menu-size-height: 70px; //altura do menu mobile (variables.scss not working if set to --var so it was defined here) 
     @media (min-width: 992px) {
         --var-menu-size-height: 96px; //altura do menu desktop
     }
