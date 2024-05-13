@@ -1087,7 +1087,7 @@
 }
 @media (max-width: 768px) {
   .home-slider .home-slider-cover .slider-1.fit-height-custom {
-    max-height: 80vh;
+    max-height: 74vh;
     margin-top: 70px;
   }
   .home-slider .home-slider-cover .slider-1.fit-height-custom .hero-home > .container {

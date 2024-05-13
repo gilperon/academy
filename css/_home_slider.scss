@@ -53,11 +53,10 @@
                 background-image: url(../images/hero-banner-1.png);
             }
 
-            &.fit-height-custom{ // Caso queira que o menu fique a 70% de altura
-                
+            &.fit-height-custom{ // Caso queira que o hero cover da home fique a 70% de altura no mobile
                 @media (max-width: 768px) {
-                    max-height: 80vh; 
-                    margin-top:$menu-size-height-mobile; 
+                        max-height: 74vh; 
+                        margin-top:$menu-size-height-mobile; 
                     .hero-home > .container{
                         margin-top:-$menu-size-height-mobile; 
                     }
