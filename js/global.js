@@ -2,6 +2,7 @@ console.log('Start');
 
 $(document).ready(function() {
 
+  // _home_hero_slider
   var swiper = new Swiper(".home-slider", {
     pagination: {
       el: ".swiper-pagination",
@@ -10,14 +11,12 @@ $(document).ready(function() {
         return '<span class="' + className + '">' + (index + 1) + "</span>";
       },
     },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
   });
 
-
-    // Wait for 5 seconds (5000 milliseconds)
-    // setTimeout(function() {
-    //   // Change the id of the section element to slide-2-bg
-    //   $('#slide-1-bg').attr('id', 'slide-1-bg');
-    // }, 5000);
 
 
     // Add click event listener to all cancel href elements ul.navbar-nav li a
@@ -28,10 +27,34 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
-    $('ul.navbar-nav li a').not('#navbarDropdown').click(function(e) {
-        e.preventDefault(); 
-        window.scrollTo(0,document.body.scrollHeight);
-    });
+
+
+    // Adiciona um evento de clique aos links de navegação móvel
+    $('#mobile-navigation a').click(function(e) {
+      var target = $(this).attr('href');
+      $('.btn-close').click();
+      if (target.charAt(0) === '#') {
+          e.preventDefault(); 
+          var offset = $(target).offset().top;
+          $('html, body').animate({
+              scrollTop: offset
+          }, 500); 
+      }
+  });
+
+    // $('#mobile-navigation a').click(function(e) {
+    //     $('.btn-close').click();
+    //   });
+      //     e.preventDefault(); 
+      //     window.scrollTo(0,document.body.scrollHeight);
+      // });
+
+
+
+    // $('ul.navbar-nav li a').not('#navbarDropdown').click(function(e) {
+    //     e.preventDefault(); 
+    //     window.scrollTo(0,document.body.scrollHeight);
+    // });
 
 
 

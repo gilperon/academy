@@ -3,10 +3,11 @@ $asset-path: "..images/";
 
 @import "_menu";
 @import "_covers";
+@import "_home_slider";
 
 html,
 body {
-    overflow-x: hidden;
+    //overflow-x: hidden;
 }
 
 h1 {
@@ -28,61 +29,6 @@ a {
         border-radius: 0 0 70px 70px;
     }
 }
-
-.home-slider {
-    width: 100%;
-    height:100%;
-
-    // Overriding Styles
-    .swiper-pagination{
-        padding-bottom:30px;
-    }
-    .swiper-pagination-bullet {
-        width: 7px;
-        height: 7px;
-        text-align: center;
-        line-height: 20px;
-        font-size: 0;
-        color: #000;
-        opacity: 1;
-        background: #fff;
-        margin-top:-30px;
-    }
-    .swiper-pagination-bullet-active {
-        border:1px solid #c12746;
-        background:transparent;
-    }
-
-    // Dobras
-    .home-slider-backdrop{
-        background:rgba(0, 0, 0, 0.18);position:absolute;inset:0;width:100%;height:100%;
-    }
-    .home-slider-cover {
-        background: #000;
-        position: relative;
-
-        .slider-cs {
-            height: 100dvh;
-            @include hero-border-radius;
-            position: relative;
-            z-index: 1;
-            background-size: cover;
-            background-repeat:no-repeat;
-            background-position:bottom center;
-            background-color:#000;
-        }
-
-        .slider-1 {
-            background-image: url(../images/hero-banner-1-mob.png);
-            @media (min-width: 768px) {
-                background-image: url(../images/hero-banner-1.png);
-            }
-        }
-    }
-}
-
-
-
 
 
 
