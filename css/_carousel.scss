@@ -321,8 +321,6 @@ $asset-path: '/images/';
 
 
 
-
-
 /** CAROUSEL CORPO DOCENTE ************************************************************/
 .wrap-slider-docente{
     position:relative;
@@ -437,4 +435,265 @@ $asset-path: '/images/';
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/** CAROUSEL CURSOS-1 ************************************************************/
+.wrap-slider-cursos-1{
+    position:relative;
+    inset:0;
+
+    .card-cs{
+        @include box-card-cs;
+
+        &.bg-odonto{
+            background:url(../images/-especialidades-1.png) no-repeat center center;
+            background-size:cover;
+        }
+
+        &.bg-biomedicina{
+            background:url(../images/-especialidades-2.png) no-repeat center center;
+            background-size:cover;
+        }
+
+        border-radius: 20px;
+        min-height: 200px; //TAMANHO DO CARD MINIMO
+        padding:30px 25px;
+         
+            .titulo{
+                font:700 18px Arial;
+                color:#000000;
+                margin-bottom:20px;
+            }
+            .texto{
+                font:400 12px Arial;
+                color:#575757;
+                margin-bottom:20px;
+            }
+               
+
+    }
+
+    // Fluido para esse Carousel
+    .container-cs-fluid-right{
+        width: 100vw;
+        position:absolute;
+        top:0;
+        left:15px; 
+        margin-top:15px;
+        display:flex;
+        flex-direction: row;
+        &.container-cs-md-fluid-right-remove{
+            @media (min-width: 768px) { 
+                position: relative;
+                inset:0;
+                margin:0;
+            }
+    
+        }
+    }
+
+    // Overrides OwlCarousel to work
+    .owl-carousel{
+        .owl-nav{
+            overflow:hidden;
+            height:0;
+        }
+        .owl-stage{padding-left:0 !important;}
+
+        .owl-prev.disabled,
+        .owl-next.disabled,
+        .owl-dots.disabled,
+        .owl-nav.disabled{
+            display:initial;
+        }
+
+    }
+
+    // Customizado para esse carousel
+    .owl-carousel{
+
+        // arrows
+        .nav-btn{
+            position: absolute;
+            cursor: pointer;
+            width: 46px;
+            height: 47px;
+            visibility: hidden;
+        }
+
+        .prev-slide{
+            background-image: url(#{$asset-path}seta_esquerda.png) ;
+            background-repeat:no-repeat;
+            background-position:center center;
+            display:none;
+            @media (min-width: 768px) {
+              display:block;
+              opacity: 0.5;
+              padding: 10px;
+              background-size: 18px; 
+              right: 35px;
+              top: -60px;
+              background:#fff;
+            }
+            &:hover{
+              opacity:1;
+            }
+        }
+        .next-slide{
+            background-image: url(#{$asset-path}seta_direita.png) ;
+            background-repeat:no-repeat;
+            background-position:center center;
+            display:none;
+            @media (min-width: 768px) {
+              display:block;
+              opacity: 0.5;
+              padding: 10px;
+              background-size: 18px; 
+              right: 0;
+              top: -60px;
+            }
+            &:hover{
+              opacity:1;
+            }
+        }
+
+    }
+
+}
+
+
+/** CAROUSEL CURSOS-2 ************************************************************/
+.wrap-slider-cursos-2{
+    position:relative;
+    inset:0;
+
+    .card-cs{
+        @include box-card-cs;
+
+        &.bg-odonto{
+            background:url(../images/-especialidades-1.png) no-repeat center center;
+            background-size:cover;
+        }
+
+        &.bg-biomedicina{
+            background:url(../images/-especialidades-2.png) no-repeat center center;
+            background-size:cover;
+        }
+
+        border-radius: 20px;
+        min-height: 200px; //TAMANHO DO CARD MINIMO
+        padding:30px 25px;
+         
+            .titulo{
+                font:700 18px Arial;
+                color:#000000;
+                margin-bottom:20px;
+            }
+            .texto{
+                font:400 12px Arial;
+                color:#575757;
+                margin-bottom:20px;
+            }
+               
+
+    }
+
+    // Fluido para esse Carousel
+    .container-cs-fluid-right{
+        width: 100vw;
+        position:absolute;
+        top:0;
+        left:15px; 
+        margin-top:15px;
+        display:flex;
+        flex-direction: row;
+        &.container-cs-md-fluid-right-remove{
+            @media (min-width: 768px) { 
+                position: relative;
+                inset:0;
+                margin:0;
+            }
+    
+        }
+    }
+
+    // Overrides OwlCarousel to work
+    .owl-carousel{
+        .owl-nav{
+            overflow:hidden;
+            height:0;
+        }
+        .owl-stage{padding-left:0 !important;}
+
+        .owl-prev.disabled,
+        .owl-next.disabled,
+        .owl-dots.disabled,
+        .owl-nav.disabled{
+            display:initial;
+        }
+
+    }
+
+    // Customizado para esse carousel
+    .owl-carousel{
+
+        // arrows
+        .nav-btn{
+            position: absolute;
+            cursor: pointer;
+            width: 46px;
+            height: 47px;
+            visibility: hidden;
+        }
+
+        .prev-slide{
+            background-image: url(#{$asset-path}seta_esquerda.png) ;
+            background-repeat:no-repeat;
+            background-position:center center;
+            display:none;
+            @media (min-width: 768px) {
+              display:block;
+              opacity: 0.5;
+              padding: 10px;
+              background-size: 18px; 
+              right: 35px;
+              top: -60px;
+              background:#fff;
+            }
+            &:hover{
+              opacity:1;
+            }
+        }
+        .next-slide{
+            background-image: url(#{$asset-path}seta_direita.png) ;
+            background-repeat:no-repeat;
+            background-position:center center;
+            display:none;
+            @media (min-width: 768px) {
+              display:block;
+              opacity: 0.5;
+              padding: 10px;
+              background-size: 18px; 
+              right: 0;
+              top: -60px;
+            }
+            &:hover{
+              opacity:1;
+            }
+        }
+
+    }
+
+}
+
+
 

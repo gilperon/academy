@@ -1969,10 +1969,226 @@
   opacity: 1;
 }
 
+/** CAROUSEL CURSOS-1 ************************************************************/
+.wrap-slider-cursos-1 {
+  position: relative;
+  inset: 0;
+}
+.wrap-slider-cursos-1 .card-cs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 20px;
+  min-height: 200px;
+  padding: 30px 25px;
+}
+.wrap-slider-cursos-1 .card-cs.bg-odonto {
+  background: url(../images/-especialidades-1.png) no-repeat center center;
+  background-size: cover;
+}
+.wrap-slider-cursos-1 .card-cs.bg-biomedicina {
+  background: url(../images/-especialidades-2.png) no-repeat center center;
+  background-size: cover;
+}
+.wrap-slider-cursos-1 .card-cs .titulo {
+  font: 700 18px Arial;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.wrap-slider-cursos-1 .card-cs .texto {
+  font: 400 12px Arial;
+  color: #575757;
+  margin-bottom: 20px;
+}
+.wrap-slider-cursos-1 .container-cs-fluid-right {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 768px) {
+  .wrap-slider-cursos-1 .container-cs-fluid-right.container-cs-md-fluid-right-remove {
+    position: relative;
+    inset: 0;
+    margin: 0;
+  }
+}
+.wrap-slider-cursos-1 .owl-carousel .owl-nav {
+  overflow: hidden;
+  height: 0;
+}
+.wrap-slider-cursos-1 .owl-carousel .owl-stage {
+  padding-left: 0 !important;
+}
+.wrap-slider-cursos-1 .owl-carousel .owl-prev.disabled,
+.wrap-slider-cursos-1 .owl-carousel .owl-next.disabled,
+.wrap-slider-cursos-1 .owl-carousel .owl-dots.disabled,
+.wrap-slider-cursos-1 .owl-carousel .owl-nav.disabled {
+  display: initial;
+}
+.wrap-slider-cursos-1 .owl-carousel .nav-btn {
+  position: absolute;
+  cursor: pointer;
+  width: 46px;
+  height: 47px;
+  visibility: hidden;
+}
+.wrap-slider-cursos-1 .owl-carousel .prev-slide {
+  background-image: url(/images/seta_esquerda.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+}
+@media (min-width: 768px) {
+  .wrap-slider-cursos-1 .owl-carousel .prev-slide {
+    display: block;
+    opacity: 0.5;
+    padding: 10px;
+    background-size: 18px;
+    right: 35px;
+    top: -60px;
+    background: #fff;
+  }
+}
+.wrap-slider-cursos-1 .owl-carousel .prev-slide:hover {
+  opacity: 1;
+}
+.wrap-slider-cursos-1 .owl-carousel .next-slide {
+  background-image: url(/images/seta_direita.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+}
+@media (min-width: 768px) {
+  .wrap-slider-cursos-1 .owl-carousel .next-slide {
+    display: block;
+    opacity: 0.5;
+    padding: 10px;
+    background-size: 18px;
+    right: 0;
+    top: -60px;
+  }
+}
+.wrap-slider-cursos-1 .owl-carousel .next-slide:hover {
+  opacity: 1;
+}
+
+/** CAROUSEL CURSOS-2 ************************************************************/
+.wrap-slider-cursos-2 {
+  position: relative;
+  inset: 0;
+}
+.wrap-slider-cursos-2 .card-cs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 20px;
+  min-height: 200px;
+  padding: 30px 25px;
+}
+.wrap-slider-cursos-2 .card-cs.bg-odonto {
+  background: url(../images/-especialidades-1.png) no-repeat center center;
+  background-size: cover;
+}
+.wrap-slider-cursos-2 .card-cs.bg-biomedicina {
+  background: url(../images/-especialidades-2.png) no-repeat center center;
+  background-size: cover;
+}
+.wrap-slider-cursos-2 .card-cs .titulo {
+  font: 700 18px Arial;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.wrap-slider-cursos-2 .card-cs .texto {
+  font: 400 12px Arial;
+  color: #575757;
+  margin-bottom: 20px;
+}
+.wrap-slider-cursos-2 .container-cs-fluid-right {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 768px) {
+  .wrap-slider-cursos-2 .container-cs-fluid-right.container-cs-md-fluid-right-remove {
+    position: relative;
+    inset: 0;
+    margin: 0;
+  }
+}
+.wrap-slider-cursos-2 .owl-carousel .owl-nav {
+  overflow: hidden;
+  height: 0;
+}
+.wrap-slider-cursos-2 .owl-carousel .owl-stage {
+  padding-left: 0 !important;
+}
+.wrap-slider-cursos-2 .owl-carousel .owl-prev.disabled,
+.wrap-slider-cursos-2 .owl-carousel .owl-next.disabled,
+.wrap-slider-cursos-2 .owl-carousel .owl-dots.disabled,
+.wrap-slider-cursos-2 .owl-carousel .owl-nav.disabled {
+  display: initial;
+}
+.wrap-slider-cursos-2 .owl-carousel .nav-btn {
+  position: absolute;
+  cursor: pointer;
+  width: 46px;
+  height: 47px;
+  visibility: hidden;
+}
+.wrap-slider-cursos-2 .owl-carousel .prev-slide {
+  background-image: url(/images/seta_esquerda.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+}
+@media (min-width: 768px) {
+  .wrap-slider-cursos-2 .owl-carousel .prev-slide {
+    display: block;
+    opacity: 0.5;
+    padding: 10px;
+    background-size: 18px;
+    right: 35px;
+    top: -60px;
+    background: #fff;
+  }
+}
+.wrap-slider-cursos-2 .owl-carousel .prev-slide:hover {
+  opacity: 1;
+}
+.wrap-slider-cursos-2 .owl-carousel .next-slide {
+  background-image: url(/images/seta_direita.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+}
+@media (min-width: 768px) {
+  .wrap-slider-cursos-2 .owl-carousel .next-slide {
+    display: block;
+    opacity: 0.5;
+    padding: 10px;
+    background-size: 18px;
+    right: 0;
+    top: -60px;
+  }
+}
+.wrap-slider-cursos-2 .owl-carousel .next-slide:hover {
+  opacity: 1;
+}
+
 html,
 body {
   overflow-x: hidden;
-  background: #fff;
+  background: #ebebeb;
 }
 
 h1 {
