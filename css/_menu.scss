@@ -1,5 +1,10 @@
 
+//$menu-size-height-mobile:70px;
+//$menu-size-height-desktop:96px;
+
+
 @mixin menu-sm{
+    
     --var-menu-bg-color: #fff;
     --var-menu-logo-filter: none;
     --var-menu-toggle-filter: none;
@@ -19,7 +24,7 @@
     --var-menu-bg-color: #fff;
     --var-menu-logo-filter: none;
     --var-menu-toggle-filter: none;
-    --var-menu-size-height: 70px;
+    --var-menu-size-height: 70px;  //$menu-size-height-mobile
     //MENU - Links e BTN 
     --var-menu-font-family: 'Inter', Arial, sans-serif;
     --var-menu-link-padding: 9px 17px 10px;
@@ -30,7 +35,7 @@
         --var-menu-logo-filter: brightness(0%) invert(100%);
         --var-menu-toggle-filter: brightness(0%) invert(100%);
         --var-menu-bg-color: rgba(0,0,0,.5);
-        --var-menu-size-height: 96px;
+        --var-menu-size-height: 96px; //$menu-size-height-desktop
         --var-menu-font-color:#fff;
         --var-menu-link-bg-hover: #C12746;
         --var-menu-btn-bg:#C12746;

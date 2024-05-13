@@ -1,6 +1,7 @@
 $ff-custom: "aeonik_trialregular", Arial, sans-serif;
 $asset-path: "..images/";
 
+@import "_variables";
 @import "_menu";
 @import "_covers";
 @import "_home_slider";
@@ -9,6 +10,7 @@ html,
 body {
     //overflow-x: hidden;
 }
+
 
 h1 {
     font-family: $ff-custom;
