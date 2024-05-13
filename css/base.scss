@@ -2,13 +2,13 @@ $ff-custom: "aeonik_trialregular", Arial, sans-serif;
 $asset-path: "..images/";
 
 @import "_variables";
-@import "_menu";
 @import "_covers";
 @import "_home_slider";
+@import "_menu";
 
 html,
 body {
-    //overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 

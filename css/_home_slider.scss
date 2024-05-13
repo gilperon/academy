@@ -1,4 +1,5 @@
 
+@import "_variables";
 
 .home-slider {
     width: 100%;
@@ -50,6 +51,18 @@
             background-image: url(../images/hero-banner-1-mob.png);
             @media (min-width: 768px) {
                 background-image: url(../images/hero-banner-1.png);
+            }
+
+            &.fit-height-custom{ // Caso queira que o menu fique a 70% de altura
+                
+                @media (max-width: 768px) {
+                    max-height: 80vh; 
+                    margin-top:$menu-size-height-mobile; 
+                    .hero-home > .container{
+                        margin-top:-$menu-size-height-mobile; 
+                    }
+                }
+                
             }
         }
     }

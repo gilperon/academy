@@ -1,10 +1,6 @@
+//@import "_variables"; //variables can not be imported to --var but directly is ok. background:$primary-text-color; is fine but not --var-background:$primary-text-color;
 
-//$menu-size-height-mobile:70px;
-//$menu-size-height-desktop:96px;
-
-
-@mixin menu-sm{
-    
+@mixin menu-sm{    
     --var-menu-bg-color: #fff;
     --var-menu-logo-filter: none;
     --var-menu-toggle-filter: none;
@@ -16,6 +12,10 @@
     --var-menu-btn-bg:#C12746;
     --var-menu-btn-bg-hover:#000000;
     --var-menu-bg-active:#C12746;
+    --var-menu-size-height: 70px; //altura do menu mobile (variables.scss are not working on _menu.scss so it was defined here) 
+    @media (min-width: 992px) {
+        --var-menu-size-height: 96px; //altura do menu desktop
+    }
 }
 
 
@@ -24,7 +24,6 @@
     --var-menu-bg-color: #fff;
     --var-menu-logo-filter: none;
     --var-menu-toggle-filter: none;
-    --var-menu-size-height: 70px;  //$menu-size-height-mobile
     //MENU - Links e BTN 
     --var-menu-font-family: 'Inter', Arial, sans-serif;
     --var-menu-link-padding: 9px 17px 10px;
@@ -35,7 +34,6 @@
         --var-menu-logo-filter: brightness(0%) invert(100%);
         --var-menu-toggle-filter: brightness(0%) invert(100%);
         --var-menu-bg-color: rgba(0,0,0,.5);
-        --var-menu-size-height: 96px; //$menu-size-height-desktop
         --var-menu-font-color:#fff;
         --var-menu-link-bg-hover: #C12746;
         --var-menu-btn-bg:#C12746;
