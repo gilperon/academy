@@ -124,7 +124,7 @@
         width: 30%;
         max-width: 380px;
         inset: 0;
-        right: 0;
+        left: 0;
     }
 
     @media (max-width: 768px) {
@@ -150,7 +150,6 @@
             position: absolute;
             width: 100%;
             max-width: 210px;
-            inset: 0;
             top: -160px;
             left: 0px;
             z-index: 0;
@@ -498,7 +497,7 @@
         padding:40px 0 25px;border-bottom:1px solid #fff;text-align:left;cursor:pointer;max-width: 80%;margin: 0 auto;user-select: none;
         .p-titulo{font:500 16px/24px 'Inter';color:#fff;letter-spacing:0.2px;padding-right:30px;}
         .p-resposta{font:300 14px/24px 'Inter';letter-spacing:0.2px;color:#fff;padding:20px 0 0;}
-        .arrow-up{background:url(#{$asset-path}arrow-up.png) no-repeat right;background-size:20px;filter:sepia(250%);}
+        .arrow-up{background:url(#{$asset-path}arrow-up.png) no-repeat right;background-size:20px;}
         .arrow-down{background:url(#{$asset-path}arrow-down.png) no-repeat right;background-size:20px;}
 
         //Mobile
@@ -660,16 +659,11 @@
 
 
 
-
-
-
-
-
-
 /*
-    Landing *************************************************************************************** /
+    Curso *************************************************************************************** /
 */
-#hero-landing {
+
+#hero-curso {
     position: relative;
     z-index: 1;
     .display-cs {
@@ -697,11 +691,78 @@
     }
 }
 
-/*
-    Curso *************************************************************************************** /
-*/
 
-#hero-curso {
+
+
+.cover-mais-detalhes {
+    position:relative;
+    background: #000;
+
+    .display-cs {
+        line-height: 0.9;
+        font-family: var(--var-main-font-regular);
+        font-weight: 400;
+        z-index:2;
+    }
+
+    .box-cs {
+        width: 85%;
+        p {
+            font-family: "Inter", Arial, sans-serif;
+            color: #dcdcdc;
+            margin-bottom: 2rem;
+        }
+    }
+    .box-pattern {
+        position: absolute;
+        width: 30%;
+        max-width: 380px;
+        bottom: 0;
+        left: 0;
+    }
+
+    @media (max-width: 768px) {
+        .display-cs {
+            font-size: 65px;
+            margin-top:-5px
+        }
+        .lead-cs {
+            font-size: 13px;
+        }
+        .box-cs {
+            width: 95%;
+            p {
+                font-family: "Inter", Arial, sans-serif;
+                color: #dcdcdc;
+                font-size: 12px;
+                padding: 0 10px;
+                margin-top: -15px;
+            }
+        }
+
+        .box-pattern {
+            position: absolute;
+            width: 100%;
+            max-width: 210px;
+            top: -160px;
+            left: 0px;
+            z-index: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/*
+    Landing *************************************************************************************** /
+*/
+#hero-landing {
     position: relative;
     z-index: 1;
     .display-cs {

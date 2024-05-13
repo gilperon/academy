@@ -623,7 +623,7 @@
   width: 30%;
   max-width: 380px;
   inset: 0;
-  right: 0;
+  left: 0;
 }
 @media (max-width: 768px) {
   .cover-quem-somos .display-cs {
@@ -647,7 +647,6 @@
     position: absolute;
     width: 100%;
     max-width: 210px;
-    inset: 0;
     top: -160px;
     left: 0px;
     z-index: 0;
@@ -972,7 +971,6 @@
 .cover-duvidas-frequentes .box-perguntas .arrow-up {
   background: url(../images/arrow-up.png) no-repeat right;
   background-size: 20px;
-  filter: sepia(250%);
 }
 .cover-duvidas-frequentes .box-perguntas .arrow-down {
   background: url(../images/arrow-down.png) no-repeat right;
@@ -1120,36 +1118,6 @@
 }
 
 /*
-    Landing *************************************************************************************** /
-*/
-#hero-landing {
-  position: relative;
-  z-index: 1;
-}
-#hero-landing .display-cs {
-  line-height: 0.9;
-  font-family: var(--var-main-font-regular);
-  font-weight: 400;
-}
-#hero-landing p,
-#hero-landing div {
-  font-family: "Inter", Arial, sans-serif;
-}
-#hero-landing .lead-cs {
-  font-weight: 400;
-  font-size: 1.1rem;
-  font-family: "Inter", Arial, sans-serif;
-}
-#hero-landing .btn-cs {
-  border-radius: 50px;
-  padding: 0.8rem 1.2rem;
-  font-size: 16px;
-}
-#hero-landing .btn-cs:hover {
-  background: #000;
-}
-
-/*
     Curso *************************************************************************************** /
 */
 #hero-curso {
@@ -1176,6 +1144,89 @@
   font-size: 16px;
 }
 #hero-curso .btn-cs:hover {
+  background: #000;
+}
+
+.cover-mais-detalhes {
+  position: relative;
+  background: #000;
+}
+.cover-mais-detalhes .display-cs {
+  line-height: 0.9;
+  font-family: var(--var-main-font-regular);
+  font-weight: 400;
+  z-index: 2;
+}
+.cover-mais-detalhes .box-cs {
+  width: 85%;
+}
+.cover-mais-detalhes .box-cs p {
+  font-family: "Inter", Arial, sans-serif;
+  color: #dcdcdc;
+  margin-bottom: 2rem;
+}
+.cover-mais-detalhes .box-pattern {
+  position: absolute;
+  width: 30%;
+  max-width: 380px;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 768px) {
+  .cover-mais-detalhes .display-cs {
+    font-size: 65px;
+    margin-top: -5px;
+  }
+  .cover-mais-detalhes .lead-cs {
+    font-size: 13px;
+  }
+  .cover-mais-detalhes .box-cs {
+    width: 95%;
+  }
+  .cover-mais-detalhes .box-cs p {
+    font-family: "Inter", Arial, sans-serif;
+    color: #dcdcdc;
+    font-size: 12px;
+    padding: 0 10px;
+    margin-top: -15px;
+  }
+  .cover-mais-detalhes .box-pattern {
+    position: absolute;
+    width: 100%;
+    max-width: 210px;
+    top: -160px;
+    left: 0px;
+    z-index: 0;
+  }
+}
+
+/*
+    Landing *************************************************************************************** /
+*/
+#hero-landing {
+  position: relative;
+  z-index: 1;
+}
+#hero-landing .display-cs {
+  line-height: 0.9;
+  font-family: var(--var-main-font-regular);
+  font-weight: 400;
+}
+#hero-landing p,
+#hero-landing div {
+  font-family: "Inter", Arial, sans-serif;
+}
+#hero-landing .lead-cs {
+  font-weight: 400;
+  font-size: 1.1rem;
+  font-family: "Inter", Arial, sans-serif;
+}
+#hero-landing .btn-cs {
+  border-radius: 50px;
+  padding: 0.8rem 1.2rem;
+  font-size: 16px;
+}
+#hero-landing .btn-cs:hover {
   background: #000;
 }
 
@@ -1246,6 +1297,11 @@ a {
 
 .logo-img {
   width: 226px;
+}
+
+.main-cover {
+  position: relative;
+  z-index: 1;
 }
 
 #slide-1-bg {
