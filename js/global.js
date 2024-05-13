@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 
 
-    // Adiciona um evento de clique aos links de navegação móvel
+    // Corrige comportamento inesperado no mobile para ir até a ancora e esconde o menu mobile
     $('#mobile-navigation a').click(function(e) {
       var target = $(this).attr('href');
       $('.btn-close').click();
@@ -42,25 +42,11 @@ $(document).ready(function() {
       }
   });
 
-    // $('#mobile-navigation a').click(function(e) {
-    //     $('.btn-close').click();
-    //   });
-      //     e.preventDefault(); 
-      //     window.scrollTo(0,document.body.scrollHeight);
-      // });
-
-
-
-    // $('ul.navbar-nav li a').not('#navbarDropdown').click(function(e) {
-    //     e.preventDefault(); 
-    //     window.scrollTo(0,document.body.scrollHeight);
-    // });
-
 
 
     $('#flipButton').on('click', function() {
-        $('#flipSVG').toggleClass('flipped');
-      });
+      $('#flipSVG').toggleClass('flipped');
+    });
 
       const observer = new MutationObserver(mutationsList => {
         mutationsList.forEach(mutation => {
@@ -98,8 +84,6 @@ $(document).ready(function() {
 
 
 
-
-
       //Perguntas e Respostas
       $('.box-perguntas').click(function() { boxPerguntas(this.id) }); 
 
@@ -119,14 +103,6 @@ $(document).ready(function() {
               document.getElementById(ydiv).style.fontWeight='400';
           }
       }
-
-
-
-
-
-
-
-
 
 
 });
