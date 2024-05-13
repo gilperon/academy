@@ -3,19 +3,23 @@ console.log('Start');
 $(document).ready(function() {
 
   // _home_hero_slider
-  var swiper = new Swiper(".home-slider", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
+  if (typeof Swiper !== 'undefined') {
+    var swiper = new Swiper(".home-slider", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
       },
-    },
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-  });
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+    });
+  } else {
+    console.error('Swiper is not defined. Make sure you have included the Swiper library.');
+  }
 
 
 
@@ -82,27 +86,19 @@ $(document).ready(function() {
       observer.observe(document.getElementById('dropCursos'), { attributes: true });
     
 
-
-
       //Perguntas e Respostas
-      $('.box-perguntas').click(function() { boxPerguntas(this.id) }); 
+      $('.box-perguntas').click(function() {
+          var $clickedBox = $(this);
+          var $resposta = $clickedBox.find('.p-resposta');
 
-      //Perguntas
-      function boxPerguntas(clicked_id) 
-      {
-          var onlynumber = clicked_id.replace(/\D/g, "");
-          var zdiv = "z-"+onlynumber;
-          var ydiv = "y-"+onlynumber;
-          if(document.getElementById(zdiv).style.display=="none"){
-              document.getElementById(zdiv).style.display='block';
-              document.getElementById(ydiv).className='p-titulo arrow-up';
-              document.getElementById(ydiv).style.fontWeight ='600';
-          }else{
-              document.getElementById(zdiv).style.display='none';
-              document.getElementById(ydiv).className='p-titulo arrow-down';
-              document.getElementById(ydiv).style.fontWeight='400';
+          if ($resposta.is(':hidden')) {
+              $resposta.slideDown();
+              $clickedBox.find('.p-titulo').removeClass('arrow-down').addClass('arrow-up').css('font-weight', '600');
+          } else {
+              $resposta.slideUp();
+              $clickedBox.find('.p-titulo').removeClass('arrow-up').addClass('arrow-down').css('font-weight', '400');
           }
-      }
+      });
 
 
 });

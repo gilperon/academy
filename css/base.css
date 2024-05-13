@@ -1155,7 +1155,7 @@
   z-index: 2;
 }
 .cover-mais-detalhes .box-cs {
-  width: 85%;
+  width: 80%;
 }
 .cover-mais-detalhes .box-cs p {
   font-family: "Inter", Arial, sans-serif;
@@ -1165,17 +1165,14 @@
 .cover-mais-detalhes .box-pattern {
   position: absolute;
   width: 30%;
-  max-width: 380px;
-  bottom: 0;
-  left: 0;
+  max-width: 480px;
+  bottom: -340px;
+  left: 40px;
 }
 @media (max-width: 768px) {
   .cover-mais-detalhes .display-cs {
     font-size: 65px;
     margin-top: -5px;
-  }
-  .cover-mais-detalhes .lead-cs {
-    font-size: 13px;
   }
   .cover-mais-detalhes .box-cs {
     width: 95%;
@@ -1195,6 +1192,186 @@
     left: 0px;
     z-index: 0;
   }
+}
+.cover-mais-detalhes .box-perguntas {
+  padding: 40px 0 25px;
+  border-bottom: 1px solid #fff;
+  text-align: left;
+  cursor: pointer;
+  margin: 0 auto;
+  user-select: none;
+}
+.cover-mais-detalhes .box-perguntas .p-titulo {
+  font: 500 16px/24px "Inter";
+  color: #fff;
+  letter-spacing: 0.2px;
+  padding-right: 30px;
+}
+.cover-mais-detalhes .box-perguntas .p-resposta {
+  font: 300 14px/24px "Inter";
+  letter-spacing: 0.2px;
+  color: #fff;
+  padding: 20px 0 0;
+}
+.cover-mais-detalhes .box-perguntas .arrow-up {
+  background: url(../images/arrow-up.png) no-repeat right;
+  background-size: 20px;
+}
+.cover-mais-detalhes .box-perguntas .arrow-down {
+  background: url(../images/arrow-down.png) no-repeat right;
+  background-size: 20px;
+}
+@media (max-width: 768px) {
+  .cover-mais-detalhes .box-perguntas .p-titulo {
+    font-family: 16px;
+  }
+  .cover-mais-detalhes .box-perguntas .p-resposta {
+    font-family: 14px;
+  }
+}
+.cover-mais-detalhes .btn-cs {
+  border-radius: 40px;
+  padding: 0.6rem 2.4rem 0.75rem;
+  font-size: 16px;
+  width: fit-content;
+  margin: 0 auto;
+  background: #C12746;
+  color: #fff;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: bold;
+}
+.cover-mais-detalhes .btn-cs:hover {
+  opacity: 0.75;
+}
+@media (max-width: 768px) {
+  .cover-mais-detalhes .btn-cs {
+    padding: 0.5rem 3.2rem 0.6rem;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
+
+.cover-curso-valor {
+  position: relative;
+  background: #C12746;
+  border-radius: 0 0 50px 50px;
+}
+.cover-curso-valor .display-cs {
+  line-height: 0.9;
+  font-family: var(--var-main-font-regular);
+  font-weight: 400;
+  color: #fff;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .cover-curso-valor .display-cs {
+    font-size: 48px;
+    font-family: var(--var-main-font-regular);
+    margin-bottom: 1rem;
+  }
+}
+.cover-curso-valor p.texto {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: #fff;
+  max-width: 410px;
+  z-index: 2;
+}
+.cover-curso-valor p.texto span.valor {
+  font-family: var(--var-main-font-regular);
+  font-size: 22px;
+  line-height: 1.4;
+}
+.cover-curso-valor p.texto span.valor b {
+  font-weight: bold;
+  font-family: var(--var-main-font-bold);
+}
+.cover-curso-valor p.texto span.pagamento {
+  font-size: 19px;
+  line-height: 1.4;
+}
+.cover-curso-valor p.texto span.pagamento b {
+  font-weight: bold;
+  font-family: var(--var-main-font-bold);
+}
+.cover-curso-valor p.texto.fs-10 {
+  margin-top: 5px;
+  max-width: 380px;
+  font-size: 10px;
+}
+@media (max-width: 768px) {
+  .cover-curso-valor p.texto {
+    font-size: 13px;
+    max-width: 410px;
+    margin-bottom: 1.8rem;
+  }
+}
+.cover-curso-valor .box-cs {
+  font-family: var(--var-main-font-regular);
+  max-width: 450px;
+}
+.cover-curso-valor .box-cs > div:nth-child(1) {
+  font-size: 26px;
+  margin-top: 80px;
+}
+.cover-curso-valor .box-cs > div:nth-child(2) {
+  font-size: 54px;
+  line-height: 0.92;
+  font-weight: 400;
+}
+.cover-curso-valor .box-cs .box-price {
+  padding: 2px 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  font-family: var(--var-main-font-regular);
+  color: #fff;
+}
+.cover-curso-valor .box-cs .box-price span:nth-child(1) {
+  font-size: 54px;
+  font-weight: bold;
+  font-family: var(--var-main-font-bold);
+}
+.cover-curso-valor .box-cs .box-price span:nth-child(2) {
+  font-family: var(--var-main-font-regular);
+  font-size: 35px;
+  font-weight: 400;
+  padding-left: 7px;
+}
+.cover-curso-valor .box-cs .box-price span:nth-child(3) {
+  font-size: 70px;
+  font-weight: 400;
+}
+.cover-curso-valor .box-cs .box-price span:nth-child(3) .fs-val {
+  font-family: var(--var-main-font-regular);
+  font-weight: 400;
+  font-size: 50px;
+}
+.cover-curso-valor .btn-cs {
+  border-radius: 40px;
+  padding: 0.6rem 2.4rem 0.75rem;
+  font-size: 16px;
+  width: fit-content;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+  margin-top: 2px;
+  width: 100%;
+  font-weight: bold;
+}
+.cover-curso-valor .btn-cs:hover {
+  opacity: 0.75;
+}
+@media (max-width: 768px) {
+  .cover-curso-valor .btn-cs {
+    padding: 0.5rem 3.2rem 0.6rem;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
+.cover-curso-valor a {
+  color: #C12746;
 }
 
 /*
