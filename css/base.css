@@ -1147,6 +1147,8 @@
 .cover-mais-detalhes {
   position: relative;
   background: #000;
+  /* Grid For desktop */
+  /* Grid For Mobile */
 }
 .cover-mais-detalhes .display-cs {
   line-height: 0.9;
@@ -1164,15 +1166,13 @@
 }
 .cover-mais-detalhes .box-pattern {
   position: absolute;
-  width: 30%;
-  max-width: 480px;
-  bottom: -340px;
-  left: 40px;
+  width: 480px;
+  bottom: -320px;
+  left: 10px;
 }
 @media (max-width: 768px) {
   .cover-mais-detalhes .display-cs {
-    font-size: 65px;
-    margin-top: -5px;
+    font-size: 48px;
   }
   .cover-mais-detalhes .box-cs {
     width: 95%;
@@ -1194,7 +1194,7 @@
   }
 }
 .cover-mais-detalhes .box-perguntas {
-  padding: 40px 0 25px;
+  padding: 30px 0 25px;
   border-bottom: 1px solid #fff;
   text-align: left;
   cursor: pointer;
@@ -1214,11 +1214,11 @@
   padding: 20px 0 0;
 }
 .cover-mais-detalhes .box-perguntas .arrow-up {
-  background: url(../images/arrow-up.png) no-repeat right;
+  background: url("../images/arrow-up.png") no-repeat right;
   background-size: 20px;
 }
 .cover-mais-detalhes .box-perguntas .arrow-down {
-  background: url(../images/arrow-down.png) no-repeat right;
+  background: url("../images/arrow-down.png") no-repeat right;
   background-size: 20px;
 }
 @media (max-width: 768px) {
@@ -1249,6 +1249,42 @@
     padding: 0.5rem 3.2rem 0.6rem;
     font-size: 14px;
     margin-top: 5px;
+  }
+}
+.cover-mais-detalhes .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 450px;
+}
+.cover-mais-detalhes .grid-item {
+  color: #fff;
+  padding: 10px 0;
+  text-align: left;
+}
+.cover-mais-detalhes .grid-item > div {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.cover-mais-detalhes .grid-item > div:first-child {
+  color: #C12746;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.cover-mais-detalhes .grid-item > div:last-child {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #fff;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .cover-mais-detalhes .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .cover-mais-detalhes .grid-item {
+    padding: 10px 0;
   }
 }
 

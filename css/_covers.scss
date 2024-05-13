@@ -715,16 +715,14 @@
     }
     .box-pattern {
         position: absolute;
-        width: 30%;
-        max-width: 480px;
-        bottom: -340px;
-        left: 40px;
+        width: 480px;
+        bottom: -320px;
+        left: 10px;
     }
 
     @media (max-width: 768px) {
         .display-cs {
-            font-size: 65px;
-            margin-top:-5px
+            font-size: 48px;
         }
         .box-cs {
             width: 95%;
@@ -746,14 +744,13 @@
             z-index: 0;
         }
     }
-
-    $asset-path:"../images/";	
+	
     .box-perguntas{
-        padding:40px 0 25px;border-bottom:1px solid #fff;text-align:left;cursor:pointer;margin: 0 auto;user-select: none;
+        padding:30px 0 25px;border-bottom:1px solid #fff;text-align:left;cursor:pointer;margin: 0 auto;user-select: none;
         .p-titulo{font:500 16px/24px 'Inter';color:#fff;letter-spacing:0.2px;padding-right:30px;}
         .p-resposta{font:300 14px/24px 'Inter';letter-spacing:0.2px;color:#fff;padding:20px 0 0;}
-        .arrow-up{background:url(#{$asset-path}arrow-up.png) no-repeat right;background-size:20px;}
-        .arrow-down{background:url(#{$asset-path}arrow-down.png) no-repeat right;background-size:20px;}
+        .arrow-up{background:url('../images/arrow-up.png') no-repeat right;background-size:20px;}
+        .arrow-down{background:url('../images/arrow-down.png') no-repeat right;background-size:20px;}
 
         //Mobile
         @media (max-width: 768px) {
@@ -782,6 +779,58 @@
             margin-top: 5px;
         }
     }
+
+
+    /* Grid For desktop */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width:450px;
+    }
+    .grid-item {
+        color:#fff;
+        padding: 10px 0;
+        text-align: left;
+        
+        > div {
+
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            font-size:16px;
+            
+                &:first-child{
+                    color:#C12746;
+                    font-weight: 600;
+                    margin-bottom:4px;
+                }
+
+                &:last-child{
+                    display:flex;
+                    justify-content: start;
+                    align-items: center;
+                    color:#fff;
+                    font-weight: 400;
+                    
+                }
+            }
+        
+    }
+
+
+    /* Grid For Mobile */
+    @media (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px
+        }
+        .grid-item {
+            padding: 10px 0;
+        }
+    }
+
+
+
+
 }
 
 
