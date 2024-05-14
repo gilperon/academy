@@ -395,12 +395,12 @@
   .cover-dizem-sobre-nos .display-cs {
     font-size: 52px;
     font-family: var(--var-main-font-regular);
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
   }
 }
 .cover-dizem-sobre-nos p.texto {
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  color: #6B6B6B;
+  color: #fff;
   margin-bottom: 1rem;
 }
 @media (max-width: 768px) {
