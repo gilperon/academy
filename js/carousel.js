@@ -25,7 +25,7 @@ $( document ).ready(function() {
 
 
     $('#slider-docente').owlCarousel({
-        margin: 15,
+        margin: 13,
         nav: true,
         loop: true,
         dots: false,
