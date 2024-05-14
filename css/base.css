@@ -1178,6 +1178,12 @@
   }
 }
 
+.anchor {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+
 /*Mixin Menu Links e Buttons*/
 /*
 *
@@ -1408,18 +1414,21 @@
 #desktop-menu #dropCursos {
   padding: 20px 10px;
 }
-#desktop-menu #dropCursos li > span {
+#desktop-menu #dropCursos li > a.link-main {
   font: 500 23px Inter;
   color: #000;
   padding: 1rem 1.5rem;
   user-select: none;
 }
-#desktop-menu #dropCursos li > a {
+#desktop-menu #dropCursos li > a.link-main:hover {
+  color: #C12746;
+}
+#desktop-menu #dropCursos li > a:not(.link-main) {
   font: 400 17px Inter;
   color: #000;
   border-radius: 4px;
 }
-#desktop-menu #dropCursos li > a:last-child {
+#desktop-menu #dropCursos li > a:not(.link-main):last-child {
   margin-bottom: 5px;
 }
 #desktop-menu #dropCursos .dropdown-item {
@@ -1629,7 +1638,7 @@
   height: 30px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 98%;
   cursor: pointer;
 }
 .arrow-cs:hover {
@@ -1657,10 +1666,8 @@
   position: relative;
   inset: 0;
 }
-@media (max-width: 568px) {
-  .wrap-slider-especialidades .height-cs {
-    min-height: 300px;
-  }
+.wrap-slider-especialidades .height-cs {
+  height: 300px;
 }
 .wrap-slider-especialidades .card-cs {
   position: relative;
@@ -1983,7 +1990,7 @@
 }
 @media (max-width: 568px) {
   .wrap-slider-testimonial .height-cs {
-    min-height: 290px;
+    min-height: 310px;
   }
 }
 .wrap-slider-testimonial .card-cs {

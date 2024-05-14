@@ -73,6 +73,11 @@
     }
 }
 
+.anchor{
+    margin-top:-10px;
+    margin-bottom:10px;
+    visibility: hidden;
+}
 
 /*Mixin Menu Links e Buttons*/
 @mixin menu-link-custom(){
@@ -336,13 +341,16 @@
 
         padding:20px 10px;
 
-        li > span{
+        li > a.link-main{
             font: 500 23px Inter;
             color: #000;
             padding:1rem 1.5rem;
             user-select: none;
+            &:hover{
+                color: #C12746;
+            }
         }
-        li > a{
+        li > a:not(.link-main){
             font: 400 17px Inter;
             color: #000;
             border-radius:4px;

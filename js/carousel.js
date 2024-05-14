@@ -12,7 +12,7 @@ $( document ).ready(function() {
         responsive: {
             0: {
                 items: 1,
-                stagePadding:40,
+                stagePadding:50,
             },
             568: {
                 items: 1,
@@ -57,7 +57,8 @@ $( document ).ready(function() {
                 stagePadding:40,
             },
             768: {
-                items: 2,
+                items: 3,
+                stagePadding:-150,
             }
         }
     });

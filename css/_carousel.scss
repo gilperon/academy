@@ -15,7 +15,7 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
     height: 30px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 98%;
     cursor: pointer;
     &:hover{opacity:1 !important;}
 
@@ -79,10 +79,8 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
     position:relative;
     inset:0;
 
-    .height-cs{
-        @media (max-width: 568px) { 
-            min-height:300px;
-        }
+    .height-cs{ 
+            height:300px;
     }
 
     .card-cs{
@@ -406,7 +404,7 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
 
     .height-cs{
         @media (max-width: 568px) { 
-            min-height:290px;
+            min-height:310px;
         }
     }
 
