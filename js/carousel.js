@@ -74,11 +74,12 @@ $( document ).ready(function() {
             },
             568: {
                 items: 2,
+                stagePadding:50,
             },
-            768: {
+            992: {
                 items: 3,
-                stagePadding:60,
-            }
+                stagePadding:50,
+            },
         }
     });
 
@@ -96,11 +97,12 @@ $( document ).ready(function() {
             },
             568: {
                 items: 2,
+                stagePadding:50,
             },
-            768: {
+            992: {
                 items: 3,
-                stagePadding:60,
-            }
+                stagePadding:50,
+            },
         }
     });
 

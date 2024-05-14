@@ -1794,13 +1794,20 @@
   position: relative;
   inset: 0;
 }
+@media (max-width: 568px) {
+  .wrap-slider-especialidades .height-cs {
+    min-height: 300px;
+  }
+}
 .wrap-slider-especialidades .card-cs {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
+  display: flex;
+  justify-content: end;
   border-radius: 20px;
-  min-height: 200px;
+  min-height: 300px;
   padding: 30px 25px;
 }
 .wrap-slider-especialidades .card-cs.bg-odonto {
@@ -1812,14 +1819,15 @@
   background-size: cover;
 }
 .wrap-slider-especialidades .card-cs .titulo {
-  font: 700 18px Arial;
-  color: #000000;
-  margin-bottom: 20px;
+  font: 400 29px "aeonik_trialregular", Arial, sans-serif;
+  color: #fff;
+  margin-bottom: 8px;
+  line-height: 1;
 }
 .wrap-slider-especialidades .card-cs .texto {
-  font: 400 12px Arial;
-  color: #575757;
-  margin-bottom: 20px;
+  font: 400 11px "Inter", Arial, Helvetica, sans-serif;
+  color: #fff;
+  margin-bottom: 15px;
 }
 .wrap-slider-especialidades .container-cs-fluid-right {
   width: 100vw;
@@ -1830,7 +1838,7 @@
   display: flex;
   flex-direction: row;
 }
-@media (min-width: 768px) {
+@media (min-width: 568px) {
   .wrap-slider-especialidades .container-cs-fluid-right.container-cs-md-fluid-right-remove {
     position: relative;
     inset: 0;
