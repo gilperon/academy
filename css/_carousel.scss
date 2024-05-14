@@ -1,9 +1,45 @@
 
 
 $asset-path: '/images/';
+$ff-family: "aeonik_trialregular", Arial, sans-serif;
+
+.fs-cs-font-family{
+    font-family:"aeonik_trialregular", Arial, sans-serif;
+}
 
 
+.arrow-cs{
 
+    width: 30px; 
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    &:hover{opacity:1 !important;}
+
+    &.arrow-cs-left{
+        background-image: url('data:image/svg+xml;utf8,<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="37.5" cy="37.5" r="36.5" stroke="black" stroke-width="2"/><path d="M43.4311 23.892L56.9999 37.4799L43.4311 51.0677" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 38H55" stroke="black" stroke-width="3" stroke-linecap="round"/></svg>');
+        -moz-transform: scale(-1, -1);
+        -o-transform: scale(-1, -1);
+        -webkit-transform: scale(-1, -1);
+        transform: scale(-1, -1);
+        opacity:.5;
+    }
+
+    &.arrow-cs-right{
+        background-image: url('data:image/svg+xml;utf8,<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="37.5" cy="37.5" r="36.5" stroke="black" stroke-width="2"/><path d="M43.4311 23.892L56.9999 37.4799L43.4311 51.0677" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 38H55" stroke="black" stroke-width="3" stroke-linecap="round"/></svg>');
+        opacity:.5;
+    }
+
+    &.arrow-cs-right, &.arrow-cs-left{
+        &.arrow-light{
+            opacity:.2;
+            filter:brightness(0%) invert(100%);
+        }
+    }
+}
+    
 
 @mixin box-card-cs{
     position: relative;
@@ -16,16 +52,18 @@ $asset-path: '/images/';
 
 @mixin container-fluid-right{
     .container-cs-fluid-right{
-        width: 100%;
+        width: 100vw;
         position:absolute;
         top:0;
-        left:0; //POSSO ALTERAR AQUI PRO MOBILE FICAR MAIS DISTANTE DA PAREDE
+        left:15px; 
+        margin-top:15px;
         display:flex;
         flex-direction: row;
         &.container-cs-md-fluid-right-remove{
-            @media (min-width: 768px) { 
+            @media (min-width: 568px) { 
                 position: relative;
                 inset:0;
+                margin:0;
             }
     
         }
@@ -443,188 +481,135 @@ $asset-path: '/images/';
 
 
 
-
-
-
-/** CAROUSEL CURSOS-1 ************************************************************/
-.wrap-slider-cursos-1{
+/** CAROUSEL CURSOS ************************************************************/
+.wrap-slider-cursos{
     position:relative;
     inset:0;
 
-    .card-cs{
-        @include box-card-cs;
-
-        &.bg-odonto{
-            background:url(../images/-especialidades-1.png) no-repeat center center;
-            background-size:cover;
-        }
-
-        &.bg-biomedicina{
-            background:url(../images/-especialidades-2.png) no-repeat center center;
-            background-size:cover;
-        }
-
-        border-radius: 20px;
-        min-height: 200px; //TAMANHO DO CARD MINIMO
-        padding:30px 25px;
-         
-            .titulo{
-                font:700 18px Arial;
-                color:#000000;
-                margin-bottom:20px;
-            }
-            .texto{
-                font:400 12px Arial;
-                color:#575757;
-                margin-bottom:20px;
-            }
-               
-
-    }
-
-    // Fluido para esse Carousel
-    .container-cs-fluid-right{
-        width: 100vw;
-        position:absolute;
-        top:0;
-        left:15px; 
-        margin-top:15px;
-        display:flex;
-        flex-direction: row;
-        &.container-cs-md-fluid-right-remove{
-            @media (min-width: 768px) { 
-                position: relative;
-                inset:0;
-                margin:0;
-            }
-    
+    .height-cs{
+        @media (max-width: 568px) { 
+            min-height:330px;
         }
     }
 
-    // Overrides OwlCarousel to work
-    .owl-carousel{
-        .owl-nav{
-            overflow:hidden;
-            height:0;
-        }
-        .owl-stage{padding-left:0 !important;}
+    /*Carousel Item Active*/
+    .first-active .carousel-item-v2{min-height:250px;font-size:16px;opacity:1;color:#fff;border-radius:10px;margin:0 7px;background:#ef5929;}
+    .first-active .h1{opacity:1;}
+    .first-active .h2{display:inline-flex;}
+    .first-active i{color:#fff;margin-bottom:7px;}
 
-        .owl-prev.disabled,
-        .owl-next.disabled,
-        .owl-dots.disabled,
-        .owl-nav.disabled{
-            display:initial;
-        }
+    --var-text-color:#fff;
+    --var-border-color: #fff;
+    --var-btn-bg-color:#fff;
+    --var-btn-text-color:#C12746;
 
+    .owl-item:not(.first-active) {
+        .card-bg{
+            filter: grayscale(1) opacity(0.2);
+        }
+        --var-text-color:#000;
+        --var-border-color:#000;
+        --var-btn-bg-color:#000;
+        --var-btn-text-color:#fff;
     }
 
-    // Customizado para esse carousel
-    .owl-carousel{
-
-        // arrows
-        .nav-btn{
+    .owl-item.first-active .card-bg{
+        &::before{
+            background:rgba(193, 39, 70, .4);
+            content: '';
+            width: 100%;
+            height: 100%;
             position: absolute;
-            cursor: pointer;
-            width: 46px;
-            height: 47px;
-            visibility: hidden;
+            inset: 0;
+            border-radius: 30px;
+        }
+    }
+
+    .card-bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index:-1;
+        margin: -30px -25px;
+        border-radius: 30px;
+        &.bg-saude-estetica{
+            background:url(../images/-curso-1.jpg) no-repeat center center;
+            background-size:cover;
         }
 
-        .prev-slide{
-            background-image: url(#{$asset-path}seta_esquerda.png) ;
-            background-repeat:no-repeat;
-            background-position:center center;
-            display:none;
-            @media (min-width: 768px) {
-              display:block;
-              opacity: 0.5;
-              padding: 10px;
-              background-size: 18px; 
-              right: 35px;
-              top: -60px;
-              background:#fff;
-            }
-            &:hover{
-              opacity:1;
-            }
+        &.bg-harmonizacao{
+            background:url(../images/-curso-2.jpg) no-repeat left top;
+            background-size:cover;
         }
-        .next-slide{
-            background-image: url(#{$asset-path}seta_direita.png) ;
-            background-repeat:no-repeat;
-            background-position:center center;
-            display:none;
-            @media (min-width: 768px) {
-              display:block;
-              opacity: 0.5;
-              padding: 10px;
-              background-size: 18px; 
-              right: 0;
-              top: -60px;
-            }
-            &:hover{
-              opacity:1;
+
+        &.bg-estetica{
+            background:url(../images/-curso-3.jpg) no-repeat center center;
+            background-size:cover;
+        }
+
+        &.bg-harmonizacao-gabriel{
+            background:url(../images/-curso-4.png) no-repeat right -70px bottom;
+            background-size:140%;
+            @media (max-width: 568px) {
+                background-size:180%;
             }
         }
 
     }
 
-}
-
-
-/** CAROUSEL CURSOS-2 ************************************************************/
-.wrap-slider-cursos-2{
-    position:relative;
-    inset:0;
-
     .card-cs{
+        position: relative;
         @include box-card-cs;
-
-        &.bg-odonto{
-            background:url(../images/-especialidades-1.png) no-repeat center center;
-            background-size:cover;
-        }
-
-        &.bg-biomedicina{
-            background:url(../images/-especialidades-2.png) no-repeat center center;
-            background-size:cover;
-        }
-
-        border-radius: 20px;
-        min-height: 200px; //TAMANHO DO CARD MINIMO
+        justify-content: space-between;
+        border-radius: 30px;
+        min-height: 300px; //TAMANHO DO CARD MINIMO
         padding:30px 25px;
-         
+
+
+        .tags{
+            display: flex;
+            flex-direction: row;
+            gap:7px;
+            > div{
+                border:1px solid var(--var-border-color);
+                border-radius:30px;
+                padding:2px 7px;
+                font-family: 'Inter', Arial, Helvetica, sans-serif;
+                font-size: 11px;
+                color:var(--var-text-color);
+            }
+        }
+
+        .box-cs{
             .titulo{
-                font:700 18px Arial;
-                color:#000000;
-                margin-bottom:20px;
+                font:400 29px $ff-family;
+                color:var(--var-text-color);
+                margin-bottom:8px;
+                line-height: 1;
             }
             .texto{
-                font:400 12px Arial;
-                color:#575757;
-                margin-bottom:20px;
+                font:400 11px 'Inter', Arial, Helvetica, sans-serif;
+                color:var(--var-text-color);
+                margin-bottom:15px;
             }
+            .btn-main{
+                font-weight: 400;
+                font-family: "Inter", Arial, sans-serif;
+                font-size:11px;
+                color: var(--var-btn-text-color);
+                background: var(--var-btn-bg-color);
+                border-radius: 50px;
+                &:hover{
+                    opacity: .65;
+                }
+            }
+        }
                
 
     }
 
     // Fluido para esse Carousel
-    .container-cs-fluid-right{
-        width: 100vw;
-        position:absolute;
-        top:0;
-        left:15px; 
-        margin-top:15px;
-        display:flex;
-        flex-direction: row;
-        &.container-cs-md-fluid-right-remove{
-            @media (min-width: 768px) { 
-                position: relative;
-                inset:0;
-                margin:0;
-            }
-    
-        }
-    }
+    @include container-fluid-right;
 
     // Overrides OwlCarousel to work
     .owl-carousel{

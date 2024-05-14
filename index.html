@@ -231,17 +231,9 @@
             <div class="col-md-6 px-4">
                 <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec graoida orci ac nisl iaculis, a luctus lacus pellentesque. Mauris lorem dolor, aliquam in mattis non, rhoncus id risus.</p>
             </div>
-            <div class="col-md-6 px-4 d-flex justify-content-end align-items-end gap-2 mb-3 mb-0">
-                <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="$('#slider-especialidades').trigger('next.owl.carousel');">
-                    <path d="M0.636164 23.8427C0.636165 11.026 11.0262 0.635926 23.843 0.635927C36.6597 0.635928 47.0497 11.026 47.0497 23.8427C47.0497 36.6595 36.6597 47.0495 23.843 47.0495C11.0262 47.0495 0.636163 36.6595 0.636164 23.8427Z" stroke="#D24A4A" stroke-width="1.2716"/>
-                    <path d="M19.4364 32.3991L10.8093 23.7202L19.4364 15.0413" stroke="#D24A4A" stroke-width="1.90741" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M36.877 24.1606L12.0807 24.1606" stroke="#D24A4A" stroke-width="1.90741" stroke-linecap="round"/>
-                </svg>
-                <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="$('#slider-especialidades').trigger('prev.owl.carousel');">
-                    <circle cx="24.159" cy="23.8426" r="23.2068" stroke="white" stroke-width="1.2716"/>
-                    <path d="M27.9298 15.1907L36.5569 23.8298L27.9298 32.469" stroke="white" stroke-width="1.90741" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M10.4893 24.1604H35.2856" stroke="white" stroke-width="1.90741" stroke-linecap="round"/>
-                </svg>
+            <div class="col-md-6 px-4 d-flex justify-content-end align-items-end gap-1 mb-1 mb-0">
+                <div class="arrow-cs arrow-cs-left arrow-light" onclick="$('#slider-especialidades').trigger('prev.owl.carousel');"></div>
+                <div class="arrow-cs arrow-cs-right arrow-light" onclick="$('#slider-especialidades').trigger('next.owl.carousel');"></div>
             </div>
         </div>
     </div>
@@ -299,8 +291,8 @@
                 <div class="display-2 display-cs text-start">cursos</div>
             </div>
             <div class="col-12 px-4">
-                <p class="texto">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
+                <p class="texto mb-4 mb-md-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing.<br/>
                     Donec graoida orci ac nisl iaculis, a luctus lacus pellentesque.
                 </p>
             </div>
@@ -308,59 +300,69 @@
     </div>
 
     <!--Navigation Carousel-->
-    <div class="container py-md-4">
-        <div class="row">
-            <div class="col-md-6 px-4">
-                <p class="texto mt-3">
-                    / POS GRADUACAO
-                </p>
+    <div class="container pb-md-3">
+        <div class="row align-items-center">
+            <div class="col-8 px-4">
+                <span class="fs-4 fs-cs-font-family text-dark">
+                    /pós-graduação
+                </span>
             </div>
-            <div class="col-md-6 px-4 d-flex justify-content-end align-items-end gap-2 mb-3 mb-0">
-                <svg width="30" height="30" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.999996 37.5C0.999997 17.3416 17.3416 1 37.5 1C57.6584 1.00001 74 17.3416 74 37.5C74 57.6584 57.6584 74 37.5 74C17.3416 74 0.999994 57.6584 0.999996 37.5Z" stroke="#CACACA" stroke-width="2"/>
-                    <path d="M30.5689 50.9577L17.0001 37.3074L30.5689 23.657" stroke="#CACACA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M58 38L19 38" stroke="#CACACA" stroke-width="3" stroke-linecap="round"/>
-                </svg>
-                <svg width="30" height="30" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="37.5" cy="37.5" r="36.5" stroke="black" stroke-width="2"/>
-                    <path d="M43.4311 23.892L56.9999 37.4799L43.4311 51.0677" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M16 38H55" stroke="black" stroke-width="3" stroke-linecap="round"/>
-                </svg>
+            <div class="col-4 px-4 d-flex justify-content-end align-items-end gap-1">
+                <div class="arrow-cs arrow-cs-left" onclick="$('#slider-cursos-1').trigger('prev.owl.carousel');"></div>
+                <div class="arrow-cs arrow-cs-right" onclick="$('#slider-cursos-1').trigger('next.owl.carousel');"></div>
             </div>
         </div>
     </div>
-    <div class="wrap-slider-cursos-1 mb-1">
+    <div class="wrap-slider-cursos mb-3 mb-md-1">
         <div class="container">
             <div class="row">
-                <div class="col-12" style="min-height:250px;">
+                <div class="col-12 height-cs">
         
                     <!--Container para Fluid Right-->
                       <div class="container-cs-fluid-right container-cs-md-fluid-right-remove">
 
-                        <!--Inicio do carousel-->
+                            <!--Inicio do carousel-->
                             <div id="slider-cursos-1" class="owl-carousel owl-theme">
                                 <div class="item">
-                                        <div class="card-cs bg-odonto">
-                                            <div class="titulo">Adriane Souza</div>
-                                            <div class="texto">Fisioterapeuta há 16 anos e especialista em Fisioterapia Dermatofuncional; Aperfeiçoamento em Pesquisa, Gestão e Inovação em Cirurgia Translacional na Escola Paulista de Medicina da UNIFESP; Mestre em Regeneração Tecidual pela UNIFESP; Ozonioterapeuta afiliada à Associação Brasileira de Ozonioterapia (ABOZ); Autora do Livro “Cuidados Tópicos em Cirurgia Plástica Estética”; Biomédica Esteta; Docente em Fisioterapia Dermatofuncional e Biomedicina Estética; Fundadora Drena.me Clínica.</div>
+                                        <div class="card-cs">
+                                            <div class="card-bg bg-saude-estetica"></div>
+                                            <div class="tags">
+                                                <div>/odontologia</div>
+                                                <div>/biomedicina</div>
+                                            </div>
+                                            <div class="box-cs">
+                                                <div class="titulo">saúde estética</div>
+                                                <div class="texto">Maecenas sed felis in sem scelerisque. Vivamus iaculis mauris at volutpat luctus. Mauris ligula magna, maximus eu dictum sit amet, dictum ac magna.</div>
+                                                <a href="#link-cursos" class="btn btn-main">saiba mais</a>
+                                            </div>
                                         </div>
                                 </div>
                                 <div class="item">
-                                    <div class="card-cs bg-biomedicina">
-                                        <div class="titulo">Adriane Souza</div>
-                                        <div class="texto">Fisioterapeuta há 16 anos e especialista em Fisioterapia Dermatofuncional; Aperfeiçoamento em Pesquisa, Gestão e Inovação em Cirurgia Translacional na Escola Paulista de Medicina da UNIFESP; Mestre em Regeneração Tecidual pela UNIFESP; Ozonioterapeuta afiliada à Associação Brasileira de Ozonioterapia (ABOZ); Autora do Livro “Cuidados Tópicos em Cirurgia Plástica Estética”; Biomédica Esteta; Docente em Fisioterapia Dermatofuncional e Biomedicina Estética; Fundadora Drena.me Clínica.</div>
+                                    <div class="card-cs">
+                                        <div class="card-bg bg-harmonizacao"></div>
+                                        <div class="tags">
+                                            <div>/enfermagem</div>
+                                            <div>/medicina</div>
+                                        </div>
+                                        <div class="box-cs">
+                                            <div class="titulo">harmonização orofacial</div>
+                                            <div class="texto">Maecenas sed felis in sem scelerisque. Vivamus iaculis mauris at volutpat luctus. Mauris ligula magna, maximus eu dictum sit amet, dictum ac magna.</div>
+                                            <a href="#link-cursos" class="btn btn-main">saiba mais</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="card-cs bg-odonto">
-                                        <div class="titulo">Adriane Souza</div>
-                                        <div class="texto">Fisioterapeuta há 16 anos e especialista em Fisioterapia Dermatofuncional; Aperfeiçoamento em Pesquisa, Gestão e Inovação em Cirurgia Translacional na Escola Paulista de Medicina da UNIFESP; Mestre em Regeneração Tecidual pela UNIFESP; Ozonioterapeuta afiliada à Associação Brasileira de Ozonioterapia (ABOZ); Autora do Livro “Cuidados Tópicos em Cirurgia Plástica Estética”; Biomédica Esteta; Docente em Fisioterapia Dermatofuncional e Biomedicina Estética; Fundadora Drena.me Clínica.</div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="card-cs bg-biomedicina">
-                                        <div class="titulo">Adriane Souza</div>
-                                        <div class="texto">Fisioterapeuta há 16 anos e especialista em Fisioterapia Dermatofuncional; Aperfeiçoamento em Pesquisa, Gestão e Inovação em Cirurgia Translacional na Escola Paulista de Medicina da UNIFESP; Mestre em Regeneração Tecidual pela UNIFESP; Ozonioterapeuta afiliada à Associação Brasileira de Ozonioterapia (ABOZ); Autora do Livro “Cuidados Tópicos em Cirurgia Plástica Estética”; Biomédica Esteta; Docente em Fisioterapia Dermatofuncional e Biomedicina Estética; Fundadora Drena.me Clínica.</div>
+                                    <div class="card-cs">
+                                        <div class="card-bg bg-estetica"></div>
+                                        <div class="tags">
+                                            <div>/biomedicina</div>
+                                            <div>/medicina</div>
+                                        </div>
+                                        <div class="box-cs">
+                                            <div class="titulo">medicina estética</div>
+                                            <div class="texto">Maecenas sed felis in sem scelerisque. Vivamus iaculis mauris at volutpat luctus. Mauris ligula magna, maximus eu dictum sit amet, dictum ac magna.</div>
+                                            <a href="#link-cursos" class="btn btn-main">saiba mais</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -374,59 +376,69 @@
         </div>
     </div>
     <!--Navigation Carousel-->
-    <div class="container py-md-4">
-        <div class="row">
-            <div class="col-md-6 px-4">
-                <p class="texto mt-3">
-                    / cursos livres
-                </p>
+    <div class="container py-md-3">
+        <div class="row align-items-center">
+            <div class="col-8 px-4">
+                <span class="fs-4 fs-cs-font-family text-dark">
+                    /cursos livres
+                </span>
             </div>
-            <div class="col-md-6 px-4 d-flex justify-content-end align-items-end gap-2 mb-3 mb-0">
-                <svg width="30" height="30" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.999996 37.5C0.999997 17.3416 17.3416 1 37.5 1C57.6584 1.00001 74 17.3416 74 37.5C74 57.6584 57.6584 74 37.5 74C17.3416 74 0.999994 57.6584 0.999996 37.5Z" stroke="#CACACA" stroke-width="2"/>
-                    <path d="M30.5689 50.9577L17.0001 37.3074L30.5689 23.657" stroke="#CACACA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M58 38L19 38" stroke="#CACACA" stroke-width="3" stroke-linecap="round"/>
-                </svg>
-                <svg width="30" height="30" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="37.5" cy="37.5" r="36.5" stroke="black" stroke-width="2"/>
-                    <path d="M43.4311 23.892L56.9999 37.4799L43.4311 51.0677" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M16 38H55" stroke="black" stroke-width="3" stroke-linecap="round"/>
-                </svg>
+            <div class="col-4 px-4 d-flex justify-content-end align-items-end gap-1">
+                <div class="arrow-cs arrow-cs-left" onclick="$('#slider-cursos-2').trigger('prev.owl.carousel');"></div>
+                <div class="arrow-cs arrow-cs-right" onclick="$('#slider-cursos-2').trigger('next.owl.carousel');"></div>
             </div>
         </div>
     </div>
-    <div class="wrap-slider-cursos-2 mb-5">
+    <div class="wrap-slider-cursos">
         <div class="container">
             <div class="row">
-                <div class="col-12" style="min-height:300px;">
+                <div class="col-12 height-cs">
         
                     <!--Container para Fluid Right-->
                       <div class="container-cs-fluid-right container-cs-md-fluid-right-remove">
 
-                        <!--Inicio do carousel-->
+                            <!--Inicio do carousel-->
                             <div id="slider-cursos-2" class="owl-carousel owl-theme">
                                 <div class="item">
-                                        <div class="card-cs bg-odonto">
-                                            <div class="titulo">Adriane Souza</div>
-                                            <div class="texto">Fisioterapeuta há 16 anos e especialista em Fisioterapia Dermatofuncional; Aperfeiçoamento em Pesquisa, Gestão e Inovação em Cirurgia Translacional na Escola Paulista de Medicina da UNIFESP; Mestre em Regeneração Tecidual pela UNIFESP; Ozonioterapeuta afiliada à Associação Brasileira de Ozonioterapia (ABOZ); Autora do Livro “Cuidados Tópicos em Cirurgia Plástica Estética”; Biomédica Esteta; Docente em Fisioterapia Dermatofuncional e Biomedicina Estética; Fundadora Drena.me Clínica.</div>
+                                        <div class="card-cs">
+                                            <div class="card-bg bg-harmonizacao-gabriel"></div>
+                                            <div class="tags">
+                                                <div>/odontologia</div>
+                                                <div>/biomedicina</div>
+                                            </div>
+                                            <div class="box-cs">
+                                                <div class="titulo">harmonização orofacial</div>
+                                                <div class="texto">Maecenas sed felis in sem scelerisque. Vivamus iaculis mauris at volutpat luctus. Mauris ligula magna, maximus eu dictum sit amet, dictum ac magna.</div>
+                                                <a href="#link-cursos" class="btn btn-main">saiba mais</a>
+                                            </div>
                                         </div>
                                 </div>
                                 <div class="item">
-                                    <div class="card-cs bg-biomedicina">
-                                        <div class="titulo">Adriane Souza</div>
-                                        <div class="texto">Fisioterapeuta há 16 anos e especialista em Fisioterapia Dermatofuncional; Aperfeiçoamento em Pesquisa, Gestão e Inovação em Cirurgia Translacional na Escola Paulista de Medicina da UNIFESP; Mestre em Regeneração Tecidual pela UNIFESP; Ozonioterapeuta afiliada à Associação Brasileira de Ozonioterapia (ABOZ); Autora do Livro “Cuidados Tópicos em Cirurgia Plástica Estética”; Biomédica Esteta; Docente em Fisioterapia Dermatofuncional e Biomedicina Estética; Fundadora Drena.me Clínica.</div>
+                                    <div class="card-cs">
+                                        <div class="card-bg bg-harmonizacao"></div>
+                                        <div class="tags">
+                                            <div>/enfermagem</div>
+                                            <div>/medicina</div>
+                                        </div>
+                                        <div class="box-cs">
+                                            <div class="titulo">harmonização orofacial</div>
+                                            <div class="texto">Maecenas sed felis in sem scelerisque. Vivamus iaculis mauris at volutpat luctus. Mauris ligula magna, maximus eu dictum sit amet, dictum ac magna.</div>
+                                            <a href="#link-cursos" class="btn btn-main">saiba mais</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="card-cs bg-odonto">
-                                        <div class="titulo">Adriane Souza</div>
-                                        <div class="texto">Fisioterapeuta há 16 anos e especialista em Fisioterapia Dermatofuncional; Aperfeiçoamento em Pesquisa, Gestão e Inovação em Cirurgia Translacional na Escola Paulista de Medicina da UNIFESP; Mestre em Regeneração Tecidual pela UNIFESP; Ozonioterapeuta afiliada à Associação Brasileira de Ozonioterapia (ABOZ); Autora do Livro “Cuidados Tópicos em Cirurgia Plástica Estética”; Biomédica Esteta; Docente em Fisioterapia Dermatofuncional e Biomedicina Estética; Fundadora Drena.me Clínica.</div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="card-cs bg-biomedicina">
-                                        <div class="titulo">Adriane Souza</div>
-                                        <div class="texto">Fisioterapeuta há 16 anos e especialista em Fisioterapia Dermatofuncional; Aperfeiçoamento em Pesquisa, Gestão e Inovação em Cirurgia Translacional na Escola Paulista de Medicina da UNIFESP; Mestre em Regeneração Tecidual pela UNIFESP; Ozonioterapeuta afiliada à Associação Brasileira de Ozonioterapia (ABOZ); Autora do Livro “Cuidados Tópicos em Cirurgia Plástica Estética”; Biomédica Esteta; Docente em Fisioterapia Dermatofuncional e Biomedicina Estética; Fundadora Drena.me Clínica.</div>
+                                    <div class="card-cs">
+                                        <div class="card-bg bg-estetica"></div>
+                                        <div class="tags">
+                                            <div>/biomedicina</div>
+                                            <div>/medicina</div>
+                                        </div>
+                                        <div class="box-cs">
+                                            <div class="titulo">medicina estética</div>
+                                            <div class="texto">Maecenas sed felis in sem scelerisque. Vivamus iaculis mauris at volutpat luctus. Mauris ligula magna, maximus eu dictum sit amet, dictum ac magna.</div>
+                                            <a href="#link-cursos" class="btn btn-main">saiba mais</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
