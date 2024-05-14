@@ -14,11 +14,10 @@ $( document ).ready(function() {
                 items: 1,
                 stagePadding:40,
             },
-            768: {
-                items: 2,
-            }
-            ,
-            980: {
+            568: {
+                items: 1,
+            },
+            996: {
                 items: 2,
             }
         }

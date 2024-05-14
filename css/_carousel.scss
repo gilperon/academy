@@ -73,159 +73,6 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
 
 
 
-/** CAROUSEL CORPO TESTIMONIALS ************************************************************/
-.wrap-slider-testimonial{
-
-    position:relative;
-    inset:0;
-
-    .card-cs{
-        @include box-card-cs;
-
-        background:#fff;
-        border-radius: 20px;
-        min-height: 250px; //TAMANHO DO CARD MINIMO
-        padding:30px 25px;
-         
-            .titulo{
-                font:700 18px Arial;
-                color:#000000;
-                margin-bottom:20px;
-            }
-            .texto{
-                font:400 12px Arial;
-                color:#575757;
-                margin-bottom:20px;
-            }
-            .box-author{
-                display:flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: start;
-                > .avatar{ max-height:80px;max-width:80px;margin-right:10px; }
-                > .author{ 
-                    display:flex;
-                    flex-direction: column;
-                    align-items: start;
-                    justify-content: start;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    :first-child{
-                        font-size:16px;
-                        line-height: 1.4;
-                        font-weight: bold;
-                    }
-                    :last-child{
-                        font-size:12px;
-                    }
-                }
-                
-            }
-
-    }
-
-    // Fluido para esse Carousel
-    .container-cs-fluid-right{
-        width: 100%;
-        position:absolute;
-        top:0;
-        left:15px; 
-        margin-top:15px;
-        display:flex;
-        flex-direction: row;
-        &.container-cs-md-fluid-right-remove{
-            @media (min-width: 768px) { 
-                position: relative;
-                inset:0;
-                margin:0;
-            }
-    
-        }
-    }
-
-    // Overrides OwlCarousel to work
-    .owl-carousel{
-        .owl-nav{
-            overflow:hidden;
-            height:0;
-        }
-        .owl-stage{padding-left:0 !important;}
-
-        .owl-prev.disabled,
-        .owl-next.disabled,
-        .owl-dots.disabled,
-        .owl-nav.disabled{
-            display:initial;
-        }
-
-    }
-
-    // Customizado para esse carousel
-    .owl-carousel{
-
-        // dots
-        .owl-dots{
-            margin-top:10px;
-        }
-        .owl-dot > span{
-            width: 8px;
-            height:8px;
-        }
-        .owl-dot.active > span{
-            border:1px solid #fff;
-            background:none !important;
-        }
-
-        // arrows
-        .nav-btn{
-            position: absolute;
-            cursor: pointer;
-            width: 26px;
-            height: 47px;
-        }
-
-        .prev-slide{
-            background-image: url(#{$asset-path}seta_esquerda.png) ;
-            background-repeat:no-repeat;
-            background-position:center center;
-            display:none;
-            @media (min-width: 768px) {
-              display:block;
-              opacity: 0.5;
-              padding: 10px;
-              background-size: 18px; 
-              left: -55px;
-              top: 90px;
-            }
-            &:hover{
-              opacity:1;
-            }
-        }
-        .next-slide{
-            background-image: url(#{$asset-path}seta_direita.png) ;
-            background-repeat:no-repeat;
-            background-position:center center;
-            display:none;
-            @media (min-width: 768px) {
-              display:block;
-              opacity: 0.5;
-              padding: 10px;
-              background-size: 18px; 
-              right: -45px;
-              top: 90px;
-            }
-            &:hover{
-              opacity:1;
-            }
-        }
-
-    }
-
-
-}
-
-
-
 
 /** CAROUSEL ESPECIALIDADES ************************************************************/
 .wrap-slider-especialidades{
@@ -343,130 +190,6 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
     }
 
 }
-
-
-
-
-
-/** CAROUSEL CORPO DOCENTE ************************************************************/
-.wrap-slider-docente{
-    position:relative;
-    inset:0;
-
-    .card-cs{
-        @include box-card-cs;
-
-        background:#fff;
-        border-radius: 20px;
-        min-height: 350px; //TAMANHO DO CARD MINIMO
-        padding:30px 25px;
-         
-            .titulo{
-                font:700 18px Arial;
-                color:#000000;
-                margin-bottom:20px;
-            }
-            .texto{
-                font:400 12px Arial;
-                color:#575757;
-                margin-bottom:20px;
-            }
-            .avatar{ max-height:80px;max-width:80px;margin-right:10px; }
-               
-
-    }
-
-    // Fluido para esse Carousel
-    .container-cs-fluid-right{
-        width: 100%;
-        position:absolute;
-        top:0;
-        left:15px; 
-        margin-top:15px;
-        display:flex;
-        flex-direction: row;
-        &.container-cs-md-fluid-right-remove{
-            @media (min-width: 768px) { 
-                position: relative;
-                inset:0;
-                margin:0;
-            }
-    
-        }
-    }
-
-    // Overrides OwlCarousel to work
-    .owl-carousel{
-        .owl-nav{
-            overflow:hidden;
-            height:0;
-        }
-        .owl-stage{padding-left:0 !important;}
-
-        .owl-prev.disabled,
-        .owl-next.disabled,
-        .owl-dots.disabled,
-        .owl-nav.disabled{
-            display:initial;
-        }
-
-    }
-
-    // Customizado para esse carousel
-    .owl-carousel{
-
-        // arrows
-        .nav-btn{
-            position: absolute;
-            cursor: pointer;
-            width: 26px;
-            height: 47px;
-        }
-
-        .prev-slide{
-            background-image: url(#{$asset-path}seta_esquerda.png) ;
-            background-repeat:no-repeat;
-            background-position:center center;
-            display:none;
-            @media (min-width: 768px) {
-              display:block;
-              opacity: 0.5;
-              padding: 10px;
-              background-size: 18px; 
-              right: 35px;
-              top: -60px;
-            }
-            &:hover{
-              opacity:1;
-            }
-        }
-        .next-slide{
-            background-image: url(#{$asset-path}seta_direita.png) ;
-            background-repeat:no-repeat;
-            background-position:center center;
-            display:none;
-            @media (min-width: 768px) {
-              display:block;
-              opacity: 0.5;
-              padding: 10px;
-              background-size: 18px; 
-              right: 0;
-              top: -60px;
-            }
-            &:hover{
-              opacity:1;
-            }
-        }
-
-    }
-
-
-}
-
-
-
-
-
 
 
 
@@ -668,6 +391,296 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
     }
 
 }
+
+
+
+/** CAROUSEL CORPO TESTIMONIALS ************************************************************/
+.wrap-slider-testimonial{
+
+    position:relative;
+    inset:0;
+
+    .px-md-cs{
+        @media (min-width: 768px) { 
+            padding:0 12rem;
+        }
+    }
+
+    .height-cs{
+        @media (max-width: 568px) { 
+            min-height:290px;
+        }
+    }
+
+    .card-cs{
+        @include box-card-cs;
+
+        background:#fff;
+        border-radius: 20px;
+        min-height: 250px; //TAMANHO DO CARD MINIMO
+        padding:30px 35px;
+         
+            .titulo{
+                font:500 18px "aeonik_trialbold", Arial, sans-serif;
+                color:#000000;
+                margin-bottom:20px;
+            }
+            .texto{
+                font:300 12px 'Inter';
+                color:#575757;
+                margin-bottom:20px;
+            }
+            .box-author{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+                > .avatar{ max-height:80px;max-width:80px;margin-right:10px; }
+                > .author{ 
+                    display:flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    :first-child{
+                        font:700 16px/1.4 "aeonik_trialbold", Arial, sans-serif;
+                    }
+                    :last-child{
+                        font:300 12px 'Inter';
+                    }
+                }
+                
+            }
+
+    }
+
+    // Fluido para esse Carousel - Esse é diferente pois não é fluido no MD
+    .container-cs-fluid-right{
+        width: 100%; // IMPORTANTE USAR 100% AQUI PARA QUE POSSA NÃO SER FLUIDO
+        position:absolute;
+        top:0;
+        left:15px; 
+        margin-top:15px;
+        display:flex;
+        flex-direction: row;
+        &.container-cs-md-fluid-right-remove{
+            @media (min-width: 568px) { 
+                position: relative;
+                inset:0;
+                margin:0;
+            }
+    
+        }
+    }
+
+    // Overrides OwlCarousel to work
+    .owl-carousel{
+        .owl-nav{
+            overflow:hidden;
+            height:0;
+        }
+        .owl-stage{padding-left:0 !important;}
+
+        .owl-prev.disabled,
+        .owl-next.disabled,
+        .owl-dots.disabled,
+        .owl-nav.disabled{
+            display:initial;
+        }
+
+    }
+
+    // Customizado para esse carousel
+    .owl-carousel{
+
+        // dots
+        .owl-dots{
+            margin-top:10px;
+        }
+        .owl-dot > span{
+            width: 8px;
+            height:8px;
+        }
+        .owl-dot.active > span{
+            border:1px solid #fff;
+            background:none !important;
+        }
+
+        // arrows
+        .nav-btn{
+            position: absolute;
+            cursor: pointer;
+            width: 26px;
+            height: 47px;
+        }
+
+        .prev-slide{
+            background-image: url(#{$asset-path}seta_esquerda.png) ;
+            background-repeat:no-repeat;
+            background-position:center center;
+            display:none;
+            @media (min-width: 768px) {
+              display:block;
+              opacity: 0.5;
+              padding: 10px;
+              background-size: 18px; 
+              left: -55px;
+              top: 90px;
+            }
+            &:hover{
+              opacity:1;
+            }
+        }
+        .next-slide{
+            background-image: url(#{$asset-path}seta_direita.png) ;
+            background-repeat:no-repeat;
+            background-position:center center;
+            display:none;
+            @media (min-width: 768px) {
+              display:block;
+              opacity: 0.5;
+              padding: 10px;
+              background-size: 18px; 
+              right: -45px;
+              top: 90px;
+            }
+            &:hover{
+              opacity:1;
+            }
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/** CAROUSEL CORPO DOCENTE ************************************************************/
+.wrap-slider-docente{
+    position:relative;
+    inset:0;
+
+    .card-cs{
+        @include box-card-cs;
+
+        background:#fff;
+        border-radius: 20px;
+        min-height: 350px; //TAMANHO DO CARD MINIMO
+        padding:30px 25px;
+         
+            .titulo{
+                font:700 18px Arial;
+                color:#000000;
+                margin-bottom:20px;
+            }
+            .texto{
+                font:400 12px Arial;
+                color:#575757;
+                margin-bottom:20px;
+            }
+            .avatar{ max-height:80px;max-width:80px;margin-right:10px; }
+               
+
+    }
+
+    // Fluido para esse Carousel
+    .container-cs-fluid-right{
+        width: 100%;
+        position:absolute;
+        top:0;
+        left:15px; 
+        margin-top:15px;
+        display:flex;
+        flex-direction: row;
+        &.container-cs-md-fluid-right-remove{
+            @media (min-width: 768px) { 
+                position: relative;
+                inset:0;
+                margin:0;
+            }
+    
+        }
+    }
+
+    // Overrides OwlCarousel to work
+    .owl-carousel{
+        .owl-nav{
+            overflow:hidden;
+            height:0;
+        }
+        .owl-stage{padding-left:0 !important;}
+
+        .owl-prev.disabled,
+        .owl-next.disabled,
+        .owl-dots.disabled,
+        .owl-nav.disabled{
+            display:initial;
+        }
+
+    }
+
+    // Customizado para esse carousel
+    .owl-carousel{
+
+        // arrows
+        .nav-btn{
+            position: absolute;
+            cursor: pointer;
+            width: 26px;
+            height: 47px;
+        }
+
+        .prev-slide{
+            background-image: url(#{$asset-path}seta_esquerda.png) ;
+            background-repeat:no-repeat;
+            background-position:center center;
+            display:none;
+            @media (min-width: 768px) {
+              display:block;
+              opacity: 0.5;
+              padding: 10px;
+              background-size: 18px; 
+              right: 35px;
+              top: -60px;
+            }
+            &:hover{
+              opacity:1;
+            }
+        }
+        .next-slide{
+            background-image: url(#{$asset-path}seta_direita.png) ;
+            background-repeat:no-repeat;
+            background-position:center center;
+            display:none;
+            @media (min-width: 768px) {
+              display:block;
+              opacity: 0.5;
+              padding: 10px;
+              background-size: 18px; 
+              right: 0;
+              top: -60px;
+            }
+            &:hover{
+              opacity:1;
+            }
+        }
+
+    }
+
+
+}
+
+
+
+
+
 
 
 

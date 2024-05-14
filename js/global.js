@@ -1,5 +1,3 @@
-console.log('Start');
-
 $(document).ready(function() {
 
   // _home_hero_slider
