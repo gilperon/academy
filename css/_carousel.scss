@@ -8,6 +8,7 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
 }
 
 
+// Arrows customizados
 .arrow-cs{
 
     width: 30px; 
@@ -41,6 +42,7 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
 }
     
 
+// Estrutura basica do card
 @mixin box-card-cs{
     position: relative;
     display: flex;
@@ -49,7 +51,7 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
 }
 
 
-
+// Responsavel por fazer o lado direito fluido
 @mixin container-fluid-right{
     .container-cs-fluid-right{
         width: 100vw;
@@ -72,9 +74,7 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
 
 
 
-
-
-/** CAROUSEL ESPECIALIDADES ************************************************************/
+/** CAROUSEL ESPECIALIDADES HOME ************************************************************/
 .wrap-slider-especialidades{
     position:relative;
     inset:0;
@@ -192,8 +192,7 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
 }
 
 
-
-/** CAROUSEL CURSOS ************************************************************/
+/** CAROUSEL CURSOS HOME ************************************************************/
 .wrap-slider-cursos{
     position:relative;
     inset:0;
@@ -393,8 +392,7 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
 }
 
 
-
-/** CAROUSEL CORPO TESTIMONIALS ************************************************************/
+/** CAROUSEL CORPO TESTIMONIALS HOME E CURSOS ************************************************************/
 .wrap-slider-testimonial{
 
     position:relative;
@@ -559,21 +557,26 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
 
 
 
-
-
-
 /** CAROUSEL CORPO DOCENTE ************************************************************/
 .wrap-slider-docente{
     position:relative;
     inset:0;
 
+    
+    .height-cs{
+        @media (max-width: 568px) { 
+            min-height:370px;
+        }
+    }
+
     .card-cs{
         @include box-card-cs;
 
         background:#fff;
-        border-radius: 20px;
+        border-radius: 30px;
         min-height: 350px; //TAMANHO DO CARD MINIMO
         padding:30px 25px;
+        border:1px solid #000;
          
             .titulo{
                 font:700 18px Arial;
@@ -676,6 +679,9 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
 
 
 }
+
+
+
 
 
 

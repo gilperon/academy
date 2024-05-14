@@ -328,7 +328,7 @@
 .cover-curso-carousel p.texto {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: #6B6B6B;
-  max-width: 450px;
+  max-width: 440px;
 }
 @media (max-width: 768px) {
   .cover-curso-carousel p.texto {
@@ -401,7 +401,7 @@
 .cover-dizem-sobre-nos p.texto {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: #fff;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 @media (max-width: 768px) {
   .cover-dizem-sobre-nos p.texto {
@@ -1652,7 +1652,7 @@
   filter: brightness(0%) invert(100%);
 }
 
-/** CAROUSEL ESPECIALIDADES ************************************************************/
+/** CAROUSEL ESPECIALIDADES HOME ************************************************************/
 .wrap-slider-especialidades {
   position: relative;
   inset: 0;
@@ -1768,7 +1768,7 @@
   opacity: 1;
 }
 
-/** CAROUSEL CURSOS ************************************************************/
+/** CAROUSEL CURSOS HOME ************************************************************/
 .wrap-slider-cursos {
   position: relative;
   inset: 0;
@@ -1971,7 +1971,7 @@
   opacity: 1;
 }
 
-/** CAROUSEL CORPO TESTIMONIALS ************************************************************/
+/** CAROUSEL CORPO TESTIMONIALS HOME E CURSOS ************************************************************/
 .wrap-slider-testimonial {
   position: relative;
   inset: 0;
@@ -2121,15 +2121,21 @@
   position: relative;
   inset: 0;
 }
+@media (max-width: 568px) {
+  .wrap-slider-docente .height-cs {
+    min-height: 370px;
+  }
+}
 .wrap-slider-docente .card-cs {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   background: #fff;
-  border-radius: 20px;
+  border-radius: 30px;
   min-height: 350px;
   padding: 30px 25px;
+  border: 1px solid #000;
 }
 .wrap-slider-docente .card-cs .titulo {
   font: 700 18px Arial;

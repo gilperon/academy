@@ -29,7 +29,7 @@ $( document ).ready(function() {
         nav: true,
         loop: true,
         dots: false,
-        navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+        navText:["<div class='nav-btn prev-slide d-none'></div>","<div class='nav-btn next-slide d-none'></div>"],
         responsive: {
             0: {
                 items: 1,
