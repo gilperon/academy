@@ -2138,14 +2138,25 @@
   border: 1px solid #000;
 }
 .wrap-slider-docente .card-cs .titulo {
-  font: 700 18px Arial;
-  color: #000000;
-  margin-bottom: 20px;
+  font: 400 29px "aeonik_trialregular", Arial, sans-serif;
+  color: #000;
+  margin-bottom: 8px;
+  line-height: 1;
 }
 .wrap-slider-docente .card-cs .texto {
-  font: 400 12px Arial;
-  color: #575757;
-  margin-bottom: 20px;
+  font: 400 11px "Inter", Arial, Helvetica, sans-serif;
+  color: #000;
+  margin-bottom: 15px;
+}
+.wrap-slider-docente .card-cs .tags {
+  margin: 7px 0 15px;
+}
+.wrap-slider-docente .card-cs .tags span {
+  border-radius: 30px;
+  padding: 4px 10px;
+  font: 600 11px "Inter", Arial, Helvetica, sans-serif;
+  color: #000;
+  background: #D9D9D9;
 }
 .wrap-slider-docente .card-cs .avatar {
   max-height: 80px;

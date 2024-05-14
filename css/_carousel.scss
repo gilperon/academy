@@ -579,14 +579,25 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
         border:1px solid #000;
          
             .titulo{
-                font:700 18px Arial;
-                color:#000000;
-                margin-bottom:20px;
+                font:400 29px $ff-family;
+                color:#000;
+                margin-bottom:8px;
+                line-height: 1;
             }
             .texto{
-                font:400 12px Arial;
-                color:#575757;
-                margin-bottom:20px;
+                font:400 11px 'Inter', Arial, Helvetica, sans-serif;
+                color:#000;
+                margin-bottom:15px;
+            }
+            .tags{
+                margin:7px 0 15px;
+                    span{
+                        border-radius:30px;
+                        padding:4px 10px;
+                        font:600 11px 'Inter', Arial, Helvetica, sans-serif;
+                        color:#000;
+                        background:#D9D9D9;
+                    }
             }
             .avatar{ max-height:80px;max-width:80px;margin-right:10px; }
                
