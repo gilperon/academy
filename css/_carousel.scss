@@ -565,17 +565,27 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
     
     .height-cs{
         @media (max-width: 568px) { 
-            min-height:370px;
+            min-height:420px;
         }
     }
+
+    .owl-stage{
+        display:flex;
+        margin-left:1px;
+        .item{
+            flex:1;
+            height:100%;
+        }
+    }
+
 
     .card-cs{
         @include box-card-cs;
 
         background:#fff;
         border-radius: 30px;
-        min-height: 350px; //TAMANHO DO CARD MINIMO
-        padding:30px 25px;
+        height:100%;
+        padding:30px 25px 10px;
         border:1px solid #000;
          
             .titulo{
@@ -614,7 +624,7 @@ $ff-family: "aeonik_trialregular", Arial, sans-serif;
         display:flex;
         flex-direction: row;
         &.container-cs-md-fluid-right-remove{
-            @media (min-width: 768px) { 
+            @media (min-width: 568px) { 
                 position: relative;
                 inset:0;
                 margin:0;

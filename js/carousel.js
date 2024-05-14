@@ -35,6 +35,9 @@ $( document ).ready(function() {
                 items: 1,
                 stagePadding:40,
             },
+            568: {
+                items: 1,
+            },
             768: {
                 items: 3,
             }

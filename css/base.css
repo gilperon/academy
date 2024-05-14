@@ -2123,8 +2123,16 @@
 }
 @media (max-width: 568px) {
   .wrap-slider-docente .height-cs {
-    min-height: 370px;
+    min-height: 420px;
   }
+}
+.wrap-slider-docente .owl-stage {
+  display: flex;
+  margin-left: 1px;
+}
+.wrap-slider-docente .owl-stage .item {
+  flex: 1;
+  height: 100%;
 }
 .wrap-slider-docente .card-cs {
   position: relative;
@@ -2133,8 +2141,8 @@
   width: 100%;
   background: #fff;
   border-radius: 30px;
-  min-height: 350px;
-  padding: 30px 25px;
+  height: 100%;
+  padding: 30px 25px 10px;
   border: 1px solid #000;
 }
 .wrap-slider-docente .card-cs .titulo {
@@ -2172,7 +2180,7 @@
   display: flex;
   flex-direction: row;
 }
-@media (min-width: 768px) {
+@media (min-width: 568px) {
   .wrap-slider-docente .container-cs-fluid-right.container-cs-md-fluid-right-remove {
     position: relative;
     inset: 0;
