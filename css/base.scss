@@ -72,7 +72,10 @@ a {
 #slide-2-bg {
     position: relative;
     background-color: #000;
-    min-height: 100vh;
+    min-height: auto;
+    @media (min-width: 768px) {
+        min-height: 100vh;
+    }
 
     &::before {
         content: "";
@@ -83,7 +86,7 @@ a {
     }
 }
 #slide-2-bg::before {
-    background: url(../images/hero-banner-2.png) no-repeat bottom center;
+    background: url(../images/hero-banner-2-mob.png) no-repeat bottom center;
     background-size: cover;
     @media (min-width: 768px) {
         background: url(../images/hero-banner-2.png) no-repeat bottom center;
@@ -94,7 +97,10 @@ a {
 #slide-3-bg {
     position: relative;
     background-color: #000;
-    min-height: 100vh;
+    min-height: auto;
+    @media (min-width: 768px) {
+        min-height: 100vh;
+    }
 
     &::before {
         content: "";
@@ -105,7 +111,7 @@ a {
     }
 }
 #slide-3-bg::before {
-    background: url(../images/hero-banner-3.png) no-repeat bottom center;
+    background: url(../images/hero-banner-3-mob.png) no-repeat bottom right;
     background-size: cover;
     @media (min-width: 768px) {
         background: url(../images/hero-banner-3.png) no-repeat bottom center;

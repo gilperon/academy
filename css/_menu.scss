@@ -30,7 +30,7 @@
     --var-menu-btn-padding: 9px 17px 10px;
     @include menu-sm;
     //Desktop
-    @media (min-width: 992px) {
+    //@media (min-width: 992px) {
         --var-menu-logo-filter: brightness(0%) invert(100%);
         --var-menu-toggle-filter: brightness(0%) invert(100%);
         --var-menu-bg-color: rgba(0,0,0,.5);
@@ -40,20 +40,20 @@
         //--var-menu-btn-bg-hover:#C12746;
         --var-menu-btn-bg-hover:#000000;
         --var-menu-bg-active:#C12746;
-    }
+    //}
 }
 
 
 .landing-theme{
     @include menu-sm;
-    @media (min-width: 768px) {
+    //@media (min-width: 768px) {
         --var-menu-bg-color: none;
         --var-menu-logo-filter: none;
         --var-menu-logo:none;
         --var-menu-font-color:#000;
         --var-menu-arrow-svg-filter: brightness(100%) invert(100%);
         --var-menu-arrow-svg-opacity:0.6;
-    }
+    //}
     #desktop-menu .navbar-nav a{
         &:active,&:hover,&:focus{
             color:#fff !important;
@@ -62,6 +62,7 @@
 }
 
 .home-theme{
+    @include menu-sm;
     @media (min-width: 992px) {
         --var-menu-btn-bg-hover:#000;
         #desktop-menu{
