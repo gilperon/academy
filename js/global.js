@@ -20,6 +20,19 @@ $(document).ready(function() {
   }
 
 
+  $(".read-more").click(function() {
+    var $texto = $("#texto-expandir");
+    if ($texto.css("display") === "none") {
+        $texto.css("display", "inline");
+        $(this).text("- ler menos");
+    } else {
+        $texto.css("display", "none");
+        $(this).text("+ ler mais");
+    }
+});
+
+
+
 
     // Add click event listener to all cancel href elements ul.navbar-nav li a
     //$('ul.navbar-nav li a').click(function(e) { // ativa para todos , o atual ativa apenas pro menu-concursos

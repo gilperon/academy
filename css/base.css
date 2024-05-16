@@ -2748,6 +2748,10 @@ a {
   }
 }
 
+.read-more {
+  cursor: pointer;
+}
+
 ._menu a {
   font-family: "Inter";
   font-size: 21.4px;
