@@ -21,6 +21,10 @@ $(document).ready(function() {
 
 
   $(".read-more").click(function() {
+    if ($(this).hasClass("not")) {
+      return;
+    }
+
     var $texto = $("#texto-expandir");
     if ($texto.css("display") === "none") {
         $texto.css("display", "inline");
