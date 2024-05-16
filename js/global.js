@@ -115,3 +115,161 @@ $(document).ready(function() {
 });
 
 
+
+
+
+/*!
+* JavaScript para validacoes dos Forms
+*/
+$(document).ready(function () {
+
+  $(".input-custom").on('focusout', function () {
+      const _ = this;
+      let name = _.getAttribute('name');
+      let value = _.value;
+      ValidateFields(name, value);
+  });
+
+  $("#form-index").submit(function (e) {
+      e.preventDefault();
+      const inputs = document.querySelectorAll('.input-custom');
+      let error = 0;
+      let success = 0;
+      for (const input of inputs) {
+          let name = input.getAttribute('name');
+          let value = input.value;
+          success = ValidateFields(name, value, 'form');
+          if (error == 0 && !success) { $(`#${name}`).focus(); error++; }  //focus first error
+      }
+
+      //submit form
+      if (error == 0) {
+
+          this.submit();
+      }
+  });
+
+  $("#whatsapp").on('input', function (e) { e.target.value = PhoneMask(e.target.value, 'celular') });
+});
+
+
+function ValidateFields(name, value, tipo) {
+  let x = true; //caso o status seja alterado para false, nao submete
+
+  switch (name) {
+      case 'nome':
+          x = ValidateLength();
+          break;
+      case 'SingleLine':
+      case 'MultiLine':
+          x = ValidateLength();
+          break;
+      case 'email':
+          x = ValidateEmail();
+          break;
+      case 'whatsapp':
+      case 'whatsapp':
+          let phoneType = name == 'SingleLine3' ? 'phone' : 'cell';
+          x = ValidatePhone(phoneType);
+          break;
+      case 'Dropdown':
+      case 'Dropdown1':
+          x = value == 0 ? false : true;
+          DisplayError(!x);
+          break;
+  }
+
+  return (x) ? true : false;
+
+  //Global Validations
+  function DisplayError(error) {
+      error ? $(`#${name}`).next().show() : $(`#${name}`).next().hide();
+  }   
+
+  function ValidateLength() {
+      let x = (value.trim().length <= 0) ? false : true;
+      DisplayError(!x)
+      return x;
+  }
+
+  function ValidateFullName() {
+
+      let err = false;
+
+      if (value.trim().length <= 0) {
+          err = 1;
+      }
+
+      let nameParts = value.trim().split(" ");
+      if (nameParts.length < 2) {
+          err = 1;
+      }
+
+      let isValidPart = /^[a-zA-Z\s]+$/;
+      for (let part of nameParts) {
+          if (!isValidPart.test(part)) {
+              err = 1;
+          }
+      }
+
+      if (err) {
+          DisplayError(true);
+          return false;
+      } else {
+          const firstName = nameParts.shift().trim();
+          const lastName = nameParts.join(" ").trim();
+          $('input[name="Name_First"]').val(firstName);
+          $('input[name="Name_Last"]').val(lastName);
+          DisplayError(false);
+          return true;
+      }
+
+  }
+
+  function ValidateEmail() {
+      const isValidEmail = value => { return value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/); }
+      if (!isValidEmail(value)) {
+          $(`#${name}`).next().show();
+          return false
+      } else {
+          $(`#${name}`).next().hide();
+          return true
+      }
+  }
+
+  function ValidatePhone(str) {
+      let sizeOfPhone = str == 'phone' ? 14 : 15;
+      if (value.trim().length < sizeOfPhone) {
+          $(`#${name}`).next().show();
+          return false
+      } else {
+          if (sizeOfPhone === 15 && value.trim()[5] !== '9') {
+              $(`#${name}`).next().show();
+              return false
+          }
+          $(`#${name}`).next().hide();
+          return true
+      }
+  }
+}
+
+//Máscara para telefone e celular Zoho
+function PhoneMask(phone, tipo) {
+  if (tipo == 'telefone') {
+      return phone.replace(/\D/g, '')
+          .replace(/^(\d)/, '($1')
+          .replace(/^(\(\d{2})(\d)/, '$1) $2')
+          .replace(/(\d{4})(\d{1,5})/, '$1-$2')
+          .replace(/(-\d{4})\d+?$/, '$1');
+  }
+  if (tipo == 'celular') {
+      return phone.replace(/\D/g, '')
+          .replace(/^(\d)/, '($1')
+          .replace(/^(\(\d{2})(\d)/, '$1) $2')
+          .replace(/(\d{5})(\d{1,5})/, '$1-$2')
+          .replace(/(-\d{4})\d+?$/, '$1');
+  }
+}
+
+
+

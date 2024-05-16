@@ -632,16 +632,20 @@
             </div>
             <div class="col-md-6 px-2">
 
+                    <form id="form-index" name="form-index" method="post">
                     <div class="container p-0">
                         <div class="row">
                             <div class="col-6 pe-0">
-                                <input type="text" class="form-control" id="nome" placeholder="Nome">
+                                <input type="text" class="form-control input-custom" id="nome" name="nome" placeholder="Nome">
+                                <div class="_error">Digite um nome</div>
                             </div>
                             <div class="col-6">
-                                <input type="text" class="form-control" id="whatsapp" placeholder="Whatsapp">
+                                <input type="text" class="form-control input-custom" id="whatsapp" name="whatsapp" placeholder="Whatsapp">
+                                <div class="_error">Digite um Whatsapp</div>
                             </div>
                             <div class="col-12 mt-3">
-                                <input type="text" class="form-control" id="email" placeholder="Email">
+                                <input type="text" class="form-control input-custom" id="email" name="email" placeholder="Email">
+                                <div class="_error">Digite um e-mail</div>
                             </div>
                             <div class="col-12 mt-3">
                                 <select class="form-select" id="graduacao">
@@ -660,10 +664,11 @@
                                   </select>
                             </div>
                             <div class="col-12 mt-3 text-end text-md-start">
-                                <input type="button" class="btn btn-cs" value="Enviar">
+                                <input type="submit" class="btn btn-cs" value="Enviar">
                             </div>
                         </div>
                     </div>
+                    </form>
 
 
             </div>
