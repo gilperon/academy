@@ -676,7 +676,7 @@
     line-height: 0.9;
     font-family: var(--var-main-font-regular);
     font-weight: 400;
-    margin-top: 0;
+    margin-top: -12px;
   }
   #hero-curso .curso-label {
     font-size: 12px;
@@ -727,7 +727,16 @@
   font-weight: 400;
   z-index: 2;
 }
+.cover-mais-detalhes .hr-dash {
+  margin-top: -5px;
+  width: 102px;
+  height: 4.2px;
+  background: #C12746;
+  border-radius: 5px;
+  display: block;
+}
 .cover-mais-detalhes .box-cs {
+  margin-top: -5px;
   width: 80%;
 }
 .cover-mais-detalhes .box-cs p {
@@ -743,9 +752,15 @@
 }
 @media (max-width: 768px) {
   .cover-mais-detalhes .display-cs {
-    font-size: 48px;
+    font-size: 38px;
+  }
+  .cover-mais-detalhes .hr-dash {
+    width: 80px;
+    height: 4px;
+    border-radius: 5px;
   }
   .cover-mais-detalhes .box-cs {
+    margin-top: -10px;
     width: 95%;
   }
   .cover-mais-detalhes .box-cs p {
@@ -757,10 +772,10 @@
   }
   .cover-mais-detalhes .box-pattern {
     position: absolute;
-    width: 100%;
-    max-width: 210px;
-    top: -160px;
-    left: 0px;
+    width: 380px;
+    bottom: -180px;
+    left: 100px;
+    transform: rotate(41deg) scale(-1, -1);
     z-index: 0;
   }
 }
@@ -771,9 +786,11 @@
   cursor: pointer;
   margin: 0 auto;
   user-select: none;
+  position: relative;
+  z-index: 1;
 }
 .cover-mais-detalhes .box-perguntas .p-titulo {
-  font: 500 16px/24px "Inter";
+  font: 500 18px/24px "Inter";
   color: #fff;
   letter-spacing: 0.2px;
   padding-right: 30px;
@@ -794,10 +811,12 @@
 }
 @media (max-width: 768px) {
   .cover-mais-detalhes .box-perguntas .p-titulo {
-    font-family: 16px;
+    font-size: 16px;
   }
   .cover-mais-detalhes .box-perguntas .p-resposta {
-    font-family: 14px;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    padding: 15px 0 0;
   }
 }
 .cover-mais-detalhes .btn-cs {
@@ -811,6 +830,8 @@
   margin-top: 10px;
   width: 100%;
   font-weight: bold;
+  position: relative;
+  z-index: 1;
 }
 .cover-mais-detalhes .btn-cs:hover {
   opacity: 0.75;
@@ -856,6 +877,26 @@
   }
   .cover-mais-detalhes .grid-item {
     padding: 10px 0;
+  }
+  .cover-mais-detalhes .grid-item > div {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  .cover-mais-detalhes .grid-item > div svg {
+    zoom: 0.8;
+  }
+  .cover-mais-detalhes .grid-item > div:first-child {
+    color: #C12746;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .cover-mais-detalhes .grid-item > div:last-child {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
   }
 }
 
@@ -2365,6 +2406,10 @@ a {
 
 .logo-img {
   width: 226px;
+}
+
+.fft-cs {
+  font-family: "aeonik_trialregular", Arial, sans-serif;
 }
 
 .main-cover {
