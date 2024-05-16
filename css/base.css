@@ -1669,7 +1669,7 @@
   user-select: none;
 }
 #desktop-menu #dropCursos li > a.link-main:hover {
-  color: #C12746;
+  color: #C12746 !important;
 }
 #desktop-menu #dropCursos li > a:not(.link-main) {
   font: 400 17px Inter;
@@ -1678,6 +1678,9 @@
 }
 #desktop-menu #dropCursos li > a:not(.link-main):last-child {
   margin-bottom: 5px;
+}
+#desktop-menu #dropCursos li > a:not(.link-main):hover {
+  color: #C12746 !important;
 }
 #desktop-menu #dropCursos .dropdown-item {
   padding: 0.35rem 1rem;

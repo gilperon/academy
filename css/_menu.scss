@@ -348,7 +348,7 @@
             padding:1rem 1.5rem;
             user-select: none;
             &:hover{
-                color: #C12746;
+                color: #C12746 !important;
             }
         }
         li > a:not(.link-main){
@@ -357,6 +357,9 @@
             border-radius:4px;
             &:last-child{
                 margin-bottom:5px;
+            }
+            &:hover{
+                color: #C12746 !important;
             }
         }
         .dropdown-item{
