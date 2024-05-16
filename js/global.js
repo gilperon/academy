@@ -130,7 +130,7 @@ $(document).ready(function () {
       ValidateFields(name, value);
   });
 
-  $("#form-index").submit(function (e) {
+  $("#form-validation").submit(function (e) {
       e.preventDefault();
       const inputs = document.querySelectorAll('.input-custom');
       let error = 0;
