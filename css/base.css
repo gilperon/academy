@@ -1163,6 +1163,14 @@
     margin-top: -5px;
   }
 }
+.cover-invista .tos {
+  max-width: 75%;
+}
+@media (max-width: 768px) {
+  .cover-invista .tos {
+    max-width: 100%;
+  }
+}
 .cover-invista p.texto {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: #fff;
