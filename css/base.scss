@@ -5,6 +5,7 @@ $asset-path: "..images/";
 @import "_covers";
 @import "_home_slider";
 @import "_menu";
+@import "_footer";
 @import "_carousel";
 
 
@@ -146,6 +147,8 @@ a {
     }
 }
 
+
+
 ._menu {
     $ff-menu: "Inter";
     $ff-color: #fff;
@@ -158,3 +161,5 @@ a {
         text-align: center;
     }
 }
+
+
