@@ -253,7 +253,7 @@ function ValidateFields(name, value, tipo) {
   }
 }
 
-//Máscara para telefone e celular Zoho
+//Máscara para telefone
 function PhoneMask(phone, tipo) {
   if (tipo == 'telefone') {
       return phone.replace(/\D/g, '')
