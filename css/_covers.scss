@@ -1111,6 +1111,32 @@
         line-height: 0.9;
         font-family: var(--var-main-font-regular);
         font-weight: 400;
+        margin-top:3rem;
+    }
+    .px-cs{
+        padding-right: 2.1rem !important;
+        padding-left: 2.1rem !important;
+    }
+    .description{
+        max-width: 400px;
+        font-size:14px;
+    }
+    .hr-dash{
+        margin-top:5px;
+        width: 220px; 
+        height: 4.2px; 
+        background: #C12746;
+        border-radius:5px;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+    .procedimentos{
+        color:#000000;font-weight: 600;gap:5px;font-size:1.45rem;line-height: 1.8rem;
+    }
+    .read-more{
+        color:#969696;
+        font-size:17px;
+        font-weight: 600;
     }
     p,
     div {
@@ -1130,8 +1156,40 @@
             background: #000;
         }
     }
-}
 
+    @media (max-width: 768px) {
+        .display-cs {
+            line-height: 0.8;
+            font-family: var(--var-main-font-regular);
+            font-weight: 400;
+            margin-top:-40px;
+            font-size:calc(1.625rem + 3.85vw);
+        }
+        .read-more{
+            color:#969696;
+            font-size:12px;
+            font-weight: 600;
+        }
+        .description{
+            max-width: 200px;
+            font-size: 9px;
+            line-height: 1.5;
+        }
+        .procedimentos{
+            color: #000000;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            margin-top:4px;
+        }
+        .hr-dash{
+            margin-top:-3px;
+            width: 155px; 
+            height: 3px; 
+            margin-bottom: 15px;
+        }
+    }
+}
 
 
 
@@ -1139,6 +1197,9 @@
     position:relative;
     background: #C12746;
     border-radius:0 0 50px 50px;
+    @media (max-width: 768px) {
+        border-radius:0 0 30px 30px;
+    }
 
     .display-cs {
         line-height: 0.9;
@@ -1152,6 +1213,7 @@
             font-size:48px;
             font-family: var(--var-main-font-regular);
             margin-bottom:1rem;
+            margin-top:-5px;
         }
     }
 
@@ -1182,6 +1244,12 @@
     .box-form{
         background:#191919;
         border-radius: 12px;
+        position:relative;
+        z-index:5;
+
+        @media (max-width: 768px) {
+            margin-top:-15px;
+        }
 
         .mt-cs{
             margin-top:0.8rem;
@@ -1194,6 +1262,9 @@
             font-size:24px;
             line-height: 1.4;
             margin-top:-4px;
+            @media (max-width: 768px) {
+                font-size:20px;
+            }
         }
 
         .form-control,.form-select{

@@ -1055,6 +1055,36 @@
   line-height: 0.9;
   font-family: var(--var-main-font-regular);
   font-weight: 400;
+  margin-top: 3rem;
+}
+#hero-landing .px-cs {
+  padding-right: 2.1rem !important;
+  padding-left: 2.1rem !important;
+}
+#hero-landing .description {
+  max-width: 400px;
+  font-size: 14px;
+}
+#hero-landing .hr-dash {
+  margin-top: 5px;
+  width: 220px;
+  height: 4.2px;
+  background: #C12746;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+#hero-landing .procedimentos {
+  color: #000000;
+  font-weight: 600;
+  gap: 5px;
+  font-size: 1.45rem;
+  line-height: 1.8rem;
+}
+#hero-landing .read-more {
+  color: #969696;
+  font-size: 17px;
+  font-weight: 600;
 }
 #hero-landing p,
 #hero-landing div {
@@ -1073,11 +1103,48 @@
 #hero-landing .btn-cs:hover {
   background: #000;
 }
+@media (max-width: 768px) {
+  #hero-landing .display-cs {
+    line-height: 0.8;
+    font-family: var(--var-main-font-regular);
+    font-weight: 400;
+    margin-top: -40px;
+    font-size: calc(1.625rem + 3.85vw);
+  }
+  #hero-landing .read-more {
+    color: #969696;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #hero-landing .description {
+    max-width: 200px;
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  #hero-landing .procedimentos {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-top: 4px;
+  }
+  #hero-landing .hr-dash {
+    margin-top: -3px;
+    width: 155px;
+    height: 3px;
+    margin-bottom: 15px;
+  }
+}
 
 .cover-invista {
   position: relative;
   background: #C12746;
   border-radius: 0 0 50px 50px;
+}
+@media (max-width: 768px) {
+  .cover-invista {
+    border-radius: 0 0 30px 30px;
+  }
 }
 .cover-invista .display-cs {
   line-height: 0.9;
@@ -1093,6 +1160,7 @@
     font-size: 48px;
     font-family: var(--var-main-font-regular);
     margin-bottom: 1rem;
+    margin-top: -5px;
   }
 }
 .cover-invista p.texto {
@@ -1121,6 +1189,13 @@
 .cover-invista .box-form {
   background: #191919;
   border-radius: 12px;
+  position: relative;
+  z-index: 5;
+}
+@media (max-width: 768px) {
+  .cover-invista .box-form {
+    margin-top: -15px;
+  }
 }
 .cover-invista .box-form .mt-cs {
   margin-top: 0.8rem;
@@ -1132,6 +1207,11 @@
   font-size: 24px;
   line-height: 1.4;
   margin-top: -4px;
+}
+@media (max-width: 768px) {
+  .cover-invista .box-form .box-title {
+    font-size: 20px;
+  }
 }
 .cover-invista .box-form .form-control, .cover-invista .box-form .form-select {
   font: 14px/30px "Inter";
@@ -2541,7 +2621,12 @@ a {
 #slide-4-bg {
   position: relative;
   background-color: #000;
-  min-height: 100vh;
+  min-height: auto;
+}
+@media (min-width: 768px) {
+  #slide-4-bg {
+    min-height: 100vh;
+  }
 }
 #slide-4-bg::before {
   content: "";
@@ -2551,7 +2636,7 @@ a {
 }
 
 #slide-4-bg::before {
-  background: url(../images/hero-banner-4.png) no-repeat bottom center;
+  background: url(../images/hero-banner-4-mob.png) no-repeat bottom right;
   background-size: cover;
 }
 @media (min-width: 768px) {
