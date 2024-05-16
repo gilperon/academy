@@ -767,8 +767,6 @@
 }
 
 
-
-
 .cover-mais-detalhes {
     position:relative;
     background: #000;
@@ -958,6 +956,9 @@
     position:relative;
     background: #C12746;
     border-radius:0 0 50px 50px;
+    @media (max-width: 768px) {
+        border-radius:0 0;
+    }
 
     .display-cs {
         line-height: 0.9;
@@ -1012,10 +1013,17 @@
     .box-cs{
         font-family: var(--var-main-font-regular);
         max-width: 450px;
+        zoom:1;
+        @media (max-width: 768px) {
+            zoom:.65;
+        }
         > div{
             &:nth-child(1){
                 font-size:26px;
                 margin-top:80px;
+                @media (max-width: 768px) {
+                    margin-top:-15px;
+                }
             }
             &:nth-child(2){
                 font-size:54px;
@@ -1029,6 +1037,9 @@
             border-bottom:1px solid #fff;
             font-family: var(--var-main-font-regular);
             color:#fff;
+            @media (max-width: 768px) {
+                width: 90%;
+            }
             span:nth-child(1){
                 font-size:54px;
                 font-weight: bold;
@@ -1068,9 +1079,10 @@
             opacity:.75;
         }
         @media (max-width: 768px) {
-            padding: 0.5rem 3.2rem 0.6rem;
+            padding: 0.6rem 3.2rem 0.75rem;
             font-size: 14px;
             margin-top: 5px;
+            zoom:1.35;
         }
     }
 
