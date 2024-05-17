@@ -534,7 +534,7 @@
   position: absolute;
   max-width: 320px;
   bottom: -230px;
-  left: 0px;
+  left: -12px;
   z-index: 1;
 }
 .cover-nosso-aluno .pattern-height {
@@ -1889,11 +1889,11 @@ body.landing-theme .footer-cs {
 }
 
 footer {
-  padding: 5em 0;
+  padding: 2.2em 0 2em;
 }
 @media (max-width: 768px) {
   footer {
-    padding: 3em 0;
+    padding: 2.2em 0 2em;
   }
 }
 
@@ -2597,7 +2597,7 @@ footer {
 html,
 body {
   overflow-x: hidden;
-  background: #ebebeb;
+  background: #f2f2f2;
 }
 
 h1 {
@@ -2614,6 +2614,13 @@ a {
 
 .fft-cs {
   font-family: "aeonik_trialregular", Arial, sans-serif;
+}
+
+#redes-sociais a {
+  transition: transform 0.3s ease;
+}
+#redes-sociais a:hover {
+  transform: translateY(-2px);
 }
 
 .main-cover {

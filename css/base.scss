@@ -12,7 +12,7 @@ $asset-path: "..images/";
 html,
 body {
     overflow-x: hidden;
-    background:#ebebeb;
+    background:#f2f2f2;
 }
 
 
@@ -42,6 +42,13 @@ a {
     }
 }
 
+
+#redes-sociais a{
+    transition: transform 0.3s ease;
+    &:hover{
+        transform: translateY(-2px);
+    }
+}
 
 .main-cover{ 
     position:relative;
